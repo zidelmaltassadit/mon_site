@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travaux demandés</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>Travaux demandés</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../travaux/index.html">Travaux</a></li>
+        <li><a href="../notes_des_cours/index.html">Notes</a></li>
+        <li><a href="../documents_SI/index.html">Documents SI</a></li>
+        <li><a href="../certifications/index.html">Certifications</a></li>
+        <li><a href="../projet_final/index.html">Projet final</a></li>
+        <li><a href="../soutenance/index.html">Soutenance</a></li>
+        <li><a href="../ressources/index.html">Ressources</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section>
+      <h2>Liste des travaux</h2>
+      <p>Voici mes différents travaux réalisés pendant le semestre :</p>
+      <ul>
+        <li><a href="TP1_modelisation.pdf">TP1 : Modélisation d’un SI</a></li>
+        <li><a href="TD2_base_donnees.docx">TD2 : Bases de données</a></li>
+        <!-- Tu ajouteras ici tes fichiers -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Portfolio MIAGE | TASSADIT ZIDELMAL</p>
+  </footer>
+</body>
+</html>
