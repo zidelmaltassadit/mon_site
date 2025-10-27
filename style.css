@@ -1,135 +1,159 @@
-/* 🎨 STYLE MODERNE DU PORTFOLIO MIAGE */
+/* 💎 Thème Luxe Élégant - Zidelmalt Assa */
 
-/* === STYLE GLOBAL === */
-body {
-  font-family: "Poppins", Arial, sans-serif;
-  background: linear-gradient(180deg, #f4f7fa, #e8eef7);
-  color: #222;
+/* === FONT + COULEURS === */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --noir: #111;
+  --or: #c8a951;
+  --gris: #f9f9f9;
+  --texte: #333;
+}
+
+/* === RESET === */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* === BODY === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--gris);
+  color: var(--texte);
+  line-height: 1.6;
 }
 
 /* === HEADER === */
 header {
-  background-color: #003366;
-  color: white;
-  padding: 25px 10px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  padding: 60px 20px 40px;
+  background: var(--noir);
+  color: var(--or);
+  border-bottom: 3px solid var(--or);
 }
 
 header h1 {
-  font-size: 1.8rem;
-  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
 }
 
-/* === NAVIGATION === */
+.subtitle {
+  font-size: 1rem;
+  color: #e8e6e1;
+  margin-top: 8px;
+}
+
+/* === NAV === */
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 15px 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 25px;
   gap: 15px;
 }
 
-nav ul li {
-  background: #0055cc;
-  border-radius: 8px;
-}
-
-nav a {
-  display: block;
-  color: white;
+nav ul li a {
+  color: var(--or);
   text-decoration: none;
   padding: 10px 18px;
-  font-weight: bold;
-  transition: 0.3s;
+  border: 1px solid var(--or);
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-nav a:hover {
-  background: #007bff;
+nav ul li a:hover {
+  background: var(--or);
+  color: var(--noir);
 }
 
-/* === SECTION INTRO === */
-.intro {
+/* === HERO SECTION === */
+.hero {
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #fff, #f2f0ec);
 }
 
-.intro h2 {
-  color: #003366;
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--noir);
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-.intro p {
+.hero p {
   max-width: 700px;
   margin: 0 auto 25px;
+  color: #555;
   font-size: 1.1rem;
-  line-height: 1.6;
 }
 
 .btn {
-  background: #0055cc;
-  color: white;
+  display: inline-block;
+  padding: 12px 30px;
+  background: var(--or);
+  color: var(--noir);
   text-decoration: none;
-  padding: 12px 25px;
-  border-radius: 8px;
+  border-radius: 30px;
   font-weight: bold;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background: #007bff;
+  background: var(--noir);
+  color: var(--or);
+  border: 1px solid var(--or);
 }
 
-/* === SECTION RUBRIQUES === */
-.rubriques {
-  background: white;
-  padding: 50px 20px;
-  border-radius: 15px;
+/* === GRID SECTIONS === */
+.grid {
   max-width: 1100px;
-  margin: 0 auto 50px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.rubriques h2 {
-  text-align: center;
-  color: #003366;
-  margin-bottom: 30px;
-}
-
-.cards {
+  margin: 60px auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
+  padding: 0 20px 60px;
 }
 
 .card {
-  background: #f9fbff;
-  border: 2px solid #d8e3f5;
+  background: white;
+  border: 1px solid #ddd;
   border-radius: 12px;
   padding: 25px;
   text-align: center;
-  color: #003366;
+  color: var(--noir);
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--or);
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #444;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  background: #eaf1ff;
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  border-color: var(--or);
 }
 
 /* === FOOTER === */
 footer {
-  background-color: #003366;
-  color: white;
+  background: var(--noir);
+  color: var(--or);
   text-align: center;
-  padding: 15px;
+  padding: 25px 10px;
   font-size: 0.9rem;
-  box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+  border-top: 2px solid var(--or);
 }
