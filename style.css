@@ -1,70 +1,59 @@
-/* === STYLE GLOBAL === */
+/* STYLE MODERNE DU PORTFOLIO */
+
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(180deg, #f7f9fc, #e3eaf5);
+  color: #222;
   margin: 0;
   padding: 0;
 }
 
-h1, h2 {
-  color: #004080;
-}
-
-/* === EN-TÊTE === */
 header {
-  background-color: #004080;
+  background-color: #0052cc;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 30px 10px;
 }
 
-/* === MENU === */
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-  background-color: #003366;
+  margin: 15px 0 0;
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 
-nav ul li {
-  margin: 0;
-}
-
-nav ul li a {
-  display: block;
+nav a {
   color: white;
   text-decoration: none;
-  padding: 15px 20px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-nav ul li a:hover {
-  background-color: #0055cc;
-}
-
-/* === CONTENU === */
-main {
-  padding: 40px;
-  text-align: center;
-}
-
-/* === LIENS === */
-a {
-  color: #004080;
-  text-decoration: none;
-}
-
-a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-/* === PIED DE PAGE === */
+main {
+  max-width: 800px;
+  margin: 50px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 footer {
-  background-color: #004080;
+  background-color: #0052cc;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   margin-top: 40px;
+  font-size: 0.9em;
 }
