@@ -1,0 +1,27 @@
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.file-list li {
+  background: white;
+  border: 1px solid #ddd;
+  border-left: 5px solid var(--or);
+  padding: 12px 18px;
+  margin: 10px auto;
+  max-width: 700px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.file-list li:hover {
+  background: #fefcf8;
+  transform: translateX(5px);
+}
+
+.file-list a {
+  text-decoration: none;
+  color: var(--noir);
+  font-weight: 500;
+}
