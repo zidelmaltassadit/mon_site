@@ -1,41 +1,70 @@
+/* === STYLE GLOBAL === */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f4f4f4;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
   color: #333;
-}
-
-header {
-  background: #004080;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
+  margin: 0;
   padding: 0;
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 0 15px;
+h1, h2 {
+  color: #004080;
 }
 
-nav a {
+/* === EN-TÊTE === */
+header {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* === MENU === */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #003366;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  padding: 15px 20px;
 }
 
+nav ul li a:hover {
+  background-color: #0055cc;
+}
+
+/* === CONTENU === */
 main {
   padding: 40px;
   text-align: center;
 }
 
+/* === LIENS === */
+a {
+  color: #004080;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === PIED DE PAGE === */
 footer {
-  background: #004080;
+  background-color: #004080;
   color: white;
   text-align: center;
   padding: 10px;
+  margin-top: 40px;
 }
