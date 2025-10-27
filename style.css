@@ -1,4 +1,4 @@
-/* 💎 Thème Luxe Élégant - Zidelmalt Assa */
+/* 💎 Thème Luxe Élégant - Version améliorée */
 
 /* === FONT + COULEURS === */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
@@ -8,6 +8,8 @@
   --or: #c8a951;
   --gris: #f9f9f9;
   --texte: #333;
+  --card-bg: #fff;
+  --card-shadow: rgba(0,0,0,0.08);
 }
 
 /* === RESET === */
@@ -69,6 +71,7 @@ nav ul li a {
 nav ul li a:hover {
   background: var(--or);
   color: var(--noir);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* === HERO SECTION === */
@@ -101,51 +104,86 @@ nav ul li a:hover {
   border-radius: 30px;
   font-weight: bold;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .btn:hover {
   background: var(--noir);
   color: var(--or);
   border: 1px solid var(--or);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 
 /* === GRID SECTIONS === */
 .grid {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 60px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+  gap: 30px;
   padding: 0 20px 60px;
 }
 
+/* === CARDS === */
 .card {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 12px;
+  background: var(--card-bg);
+  border-radius: 18px;
   padding: 25px;
   text-align: center;
   color: var(--noir);
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 18px var(--card-shadow);
+}
+
+/* Dégradé subtil au survol */
+.card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(135deg, rgba(200,169,81,0.15), rgba(200,169,81,0));
+  transform: rotate(45deg);
+  transition: all 0.6s ease;
+}
+
+.card:hover::before {
+  top: -20%;
+  left: -20%;
 }
 
 .card h3 {
   font-family: 'Playfair Display', serif;
   color: var(--or);
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  transition: color 0.3s;
 }
 
 .card p {
   font-size: 0.95rem;
   color: #444;
+  transition: color 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   border-color: var(--or);
+}
+
+.card:hover h3 {
+  color: #c8a951cc;
+}
+
+.card:hover p {
+  color: #333;
 }
 
 /* === FOOTER === */
