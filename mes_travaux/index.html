@@ -3,25 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Travaux</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <h1>Mes Travaux</h1>
-  <p>Voici mes devoirs et projets réalisés pendant le cours.</p>
-  <a href="../index.html" class="btn">⬅ Retour à l’accueil</a>
+  <header>
+    <h1>📘 Travaux</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../notes/index.html">Notes</a></li>
+        <li><a href="../certifications/index.html">Certifications</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Google Sheets intégré -->
-  <section class="excel-viewer">
-    <h2>PGI Exercice</h2>
-    <iframe 
-        src="https://docs.google.com/spreadsheets/d/e/TON-LIEN-PUBLIÉ/pubhtml?widget=true&amp;headers=false" 
-        width="100%" height="600">
-    </iframe>
+  <main>
+    <h2>Mes projets et exercices</h2>
+    <p>Voici mes travaux, disponibles pour consultation directe ou téléchargement :</p>
 
-    <!-- Lien téléchargement -->
-    <p>
-      <a href="PGI_Exercice.xls" download class="btn">Télécharger PGI_Exercice.xls</a>
-    </p>
-  </section>
+    <ul class="file-list">
+        <!-- Lien Google Sheets pour consultation dans le navigateur -->
+        <li>
+          <strong>PGI Exercice</strong><br>
+          <iframe 
+              src="https://docs.google.com/spreadsheets/d/e/TON-LIEN-PUBLIÉ/pubhtml?widget=true&amp;headers=false" 
+              width="100%" height="400">
+          </iframe><br>
+          <a href="PGI_Exercice.xls" download>📥 Télécharger PGI_Exercice.xls</a>
+        </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>© 2025 - Portfolio de Zidelmalt Tassadit </p>
+  </footer>
 </body>
 </html>
