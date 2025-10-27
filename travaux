@@ -1,1 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Travaux</title>
+</head>
+<body>
+  <h1>Mes Travaux</h1>
+  <p>Voici les documents que j’ai réalisés :</p>
+
+  <ul>
+    <li><a href="travail1.pdf" target="_blank">Travail 1 – Étude de cas</a></li>
+    <li><a href="travail2.docx" target="_blank">Travail 2 – Analyse du SI</a></li>
+    <li><a href="rapport-final.pdf" target="_blank">Rapport final</a></li>
+  </ul>
+
+  <a href="../index.html">⬅ Retour à l’accueil</a>
+</body>
+</html>
 
