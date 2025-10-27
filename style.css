@@ -1,11 +1,11 @@
-/* 💎 Thème Luxe Élégant - Version améliorée */
+/* 💎 Thème Luxe Élégant - Bleu Profond */
 
 /* === FONT + COULEURS === */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
 
 :root {
   --noir: #111;
-  --or: #c8a951;
+  --or: #2C3E50; /* couleur principale remplacée par bleu profond */
   --gris: #f9f9f9;
   --texte: #333;
   --card-bg: #fff;
@@ -148,7 +148,7 @@ nav ul li a:hover {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(135deg, rgba(200,169,81,0.15), rgba(200,169,81,0));
+  background: linear-gradient(135deg, rgba(44,62,80,0.15), rgba(44,62,80,0));
   transform: rotate(45deg);
   transition: all 0.6s ease;
 }
@@ -179,7 +179,7 @@ nav ul li a:hover {
 }
 
 .card:hover h3 {
-  color: #c8a951cc;
+  color: rgba(44,62,80,0.8);
 }
 
 .card:hover p {
