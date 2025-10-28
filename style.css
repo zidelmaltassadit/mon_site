@@ -1,15 +1,17 @@
-/* 💎 Thème Luxe Élégant - Bleu Profond */
+/* 💎 Thème Luxe Élégant - Bleu Profond Amélioré */
 
-/* === FONT + COULEURS === */
+/* === POLICES + COULEURS === */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-  --noir: #111;
-  --or: #2C3E50; /* couleur principale remplacée par bleu profond */
-  --gris: #f9f9f9;
-  --texte: #333;
-  --card-bg: #fff;
-  --card-shadow: rgba(0,0,0,0.08);
+  --noir: #0b0d12;
+  --bleu-profond: #1e3a5f;
+  --bleu-clair: #4a6fa5;
+  --gris-fond: #f5f6f8;
+  --texte: #2b2b2b;
+  --card-bg: #ffffff;
+  --ombre: rgba(0,0,0,0.08);
+  --accent: #c0a062; /* or doux / champagne */
 }
 
 /* === RESET === */
@@ -22,134 +24,116 @@
 /* === BODY === */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--gris);
+  background-color: var(--gris-fond);
   color: var(--texte);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* === HEADER === */
 header {
   text-align: center;
-  padding: 60px 20px 40px;
-  background: var(--noir);
-  color: var(--or);
-  border-bottom: 3px solid var(--or);
+  padding: 70px 20px 50px;
+  background: linear-gradient(135deg, var(--noir), var(--bleu-profond));
+  color: var(--accent);
+  border-bottom: 3px solid var(--accent);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   letter-spacing: 1px;
 }
 
 .subtitle {
-  font-size: 1rem;
-  color: #e8e6e1;
-  margin-top: 8px;
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-top: 10px;
 }
 
-/* === NAV === */
+/* === NAVIGATION === */
 nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 25px;
-  gap: 15px;
+  margin-top: 30px;
+  gap: 18px;
 }
 
 nav ul li a {
-  color: var(--or);
+  color: var(--accent);
   text-decoration: none;
-  padding: 10px 18px;
-  border: 1px solid var(--or);
-  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid var(--accent);
+  border-radius: 40px;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-  background: var(--or);
+  background: var(--accent);
   color: var(--noir);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(192,160,98,0.4);
 }
 
-/* === HERO SECTION === */
+/* === SECTION HERO === */
 .hero {
   text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #fff, #f2f0ec);
+  padding: 90px 20px;
+  background: linear-gradient(145deg, #ffffff, #eef1f6);
 }
 
 .hero h2 {
   font-family: 'Playfair Display', serif;
-  color: var(--noir);
-  font-size: 2rem;
+  color: var(--bleu-profond);
+  font-size: 2.2rem;
   margin-bottom: 15px;
 }
 
 .hero p {
-  max-width: 700px;
-  margin: 0 auto 25px;
+  max-width: 750px;
+  margin: 0 auto 30px;
   color: #555;
   font-size: 1.1rem;
+  line-height: 1.7;
 }
 
-.btn {
-  display: inline-block;
-  padding: 12px 30px;
-  background: var(--or);
-  color: var(--noir);
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.btn:hover {
-  background: var(--noir);
-  color: var(--or);
-  border: 1px solid var(--or);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-}
-
-/* === GRID SECTIONS === */
+/* === GRILLE === */
 .grid {
   max-width: 1200px;
   margin: 60px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  padding: 0 20px 60px;
+  gap: 35px;
+  padding: 0 20px 70px;
 }
 
-/* === CARDS === */
+/* === CARTES === */
 .card {
   background: var(--card-bg);
   border-radius: 18px;
-  padding: 25px;
+  padding: 30px;
   text-align: center;
-  color: var(--noir);
+  color: var(--texte);
   text-decoration: none;
-  transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
-  border: 1px solid #ddd;
-  box-shadow: 0 6px 18px var(--card-shadow);
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 8px 25px var(--ombre);
+  transition: all 0.4s ease;
 }
 
-/* Dégradé subtil au survol */
+/* Éclat subtil */
 .card::before {
   content: '';
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(135deg, rgba(44,62,80,0.15), rgba(44,62,80,0));
-  transform: rotate(45deg);
+  top: -60%;
+  left: -60%;
+  width: 220%;
+  height: 220%;
+  background: radial-gradient(circle at center, rgba(74,111,165,0.1), transparent 70%);
+  transform: rotate(25deg);
   transition: all 0.6s ease;
 }
 
@@ -160,7 +144,7 @@ nav ul li a:hover {
 
 .card h3 {
   font-family: 'Playfair Display', serif;
-  color: var(--or);
+  color: var(--bleu-profond);
   font-size: 1.5rem;
   margin-bottom: 12px;
   transition: color 0.3s;
@@ -168,30 +152,31 @@ nav ul li a:hover {
 
 .card p {
   font-size: 0.95rem;
-  color: #444;
+  color: #555;
   transition: color 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  border-color: var(--or);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+  border-color: var(--accent);
 }
 
 .card:hover h3 {
-  color: rgba(44,62,80,0.8);
+  color: var(--accent);
 }
 
 .card:hover p {
-  color: #333;
+  color: var(--bleu-profond);
 }
 
 /* === FOOTER === */
 footer {
-  background: var(--noir);
-  color: var(--or);
+  background: linear-gradient(135deg, var(--noir), var(--bleu-profond));
+  color: var(--accent);
   text-align: center;
-  padding: 25px 10px;
-  font-size: 0.9rem;
-  border-top: 2px solid var(--or);
+  padding: 30px 10px;
+  font-size: 0.95rem;
+  border-top: 2px solid var(--accent);
+  letter-spacing: 0.3px;
 }
