@@ -4,6 +4,85 @@
   <meta charset="UTF-8">
   <title>Compétences</title>
   <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e40af;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .competences-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .competence-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .competence-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .competence-card img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    .competence-card p {
+      font-weight: bold;
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e40af;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -19,20 +98,38 @@
 
   <main>
     <h2>Langages et compétences numériques</h2>
-    <p>Voici les langages et compétences que j'ai développés au cours de mon parcours scolaire et via la plateforme Pix :</p>
+    <p style="text-align:center;">Compétences acquises via mon parcours scolaire et la plateforme Pix :</p>
 
-    <ul>
-      <li>HTML & CSS</li>
-      <li>Java</li>
-      <li>Python</li>
-      <li>SQL</li>
-      <li>JavaScript (bases)</li>
-      <li>Compétences numériques (Pix)</li>
-    </ul>
-
-    <p>Ces compétences ont été acquises à travers mes projets scolaires et personnels, et je continue à les renforcer régulièrement.</p>
+    <div class="competences-container">
+      <div class="competence-card">
+        <img src="../assets/html_icon.png" alt="HTML & CSS">
+        <p>HTML & CSS</p>
+      </div>
+      <div class="competence-card">
+        <img src="../assets/java_icon.png" alt="Java">
+        <p>Java</p>
+      </div>
+      <div class="competence-card">
+        <img src="../assets/python_icon.png" alt="Python">
+        <p>Python</p>
+      </div>
+      <div class="competence-card">
+        <img src="../assets/sql_icon.png" alt="SQL">
+        <p>SQL</p>
+      </div>
+      <div class="competence-card">
+        <img src="../assets/js_icon.png" alt="JavaScript">
+        <p>JavaScript (bases)</p>
+      </div>
+      <div class="competence-card">
+        <img src="../assets/pix_icon.png" alt="Pix">
+        <p>Compétences numériques (Pix)</p>
+      </div>
+    </div>
   </main>
 
   <footer>
     <p>© 2025 - Portfolio de Zidelmalt Assa</p>
   </footer>
+</body>
+</html>
