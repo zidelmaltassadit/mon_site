@@ -1,17 +1,16 @@
-/* 💎 Thème Moderne - Rose Clair, Blanc & Noir */
+/* 💖 Thème Féminin - Rose Clair & Blanc */
 
 /* === POLICES + COULEURS === */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-  --noir: #0d0d0d;
+  --rose-clair: #ffe4e6; /* rose très doux */
   --blanc: #ffffff;
-  --rose-clair: #ffb6c1;
   --gris-foncé: #333333;
-  --fond: #fdfdfd;
+  --accent: #ff85a2; /* rose vif pour hover et boutons */
   --card-bg: #ffffff;
-  --ombre: rgba(0,0,0,0.15);
-  --hover-bg: rgba(255,182,193,0.1);
+  --ombre: rgba(0,0,0,0.12);
+  --hover-bg: rgba(255,133,162,0.15);
 }
 
 /* === RESET === */
@@ -24,7 +23,7 @@
 /* === BODY === */
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--fond);
+  background: var(--rose-clair);
   color: var(--gris-foncé);
   line-height: 1.7;
 }
@@ -33,21 +32,21 @@ body {
 header {
   text-align: center;
   padding: 80px 20px 50px;
-  background: var(--noir);
-  color: var(--rose-clair);
-  border-bottom: 2px solid var(--rose-clair);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  background: var(--blanc);
+  color: var(--gris-foncé);
+  border-bottom: 2px solid var(--accent);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
-  letter-spacing: 1px;
+  color: var(--accent);
 }
 
 header .subtitle {
   font-size: 1.1rem;
-  color: var(--rose-clair);
+  color: var(--gris-foncé);
   margin-top: 10px;
 }
 
@@ -62,19 +61,19 @@ nav ul {
 }
 
 nav ul li a {
-  color: var(--rose-clair);
+  color: var(--accent);
   text-decoration: none;
   padding: 10px 25px;
-  border: 1px solid var(--rose-clair);
+  border: 1px solid var(--accent);
   border-radius: 40px;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-  background: var(--rose-clair);
-  color: var(--noir);
-  box-shadow: 0 4px 12px rgba(255,182,193,0.4);
+  background: var(--accent);
+  color: var(--blanc);
+  box-shadow: 0 4px 12px rgba(255,133,162,0.4);
 }
 
 /* === MAIN CONTENT === */
@@ -88,7 +87,7 @@ h2 {
   text-align: center;
   margin-bottom: 40px;
   font-family: 'Playfair Display', serif;
-  color: var(--noir);
+  color: var(--accent);
   font-size: 2.2rem;
 }
 
@@ -101,7 +100,7 @@ h2 {
 
 /* === CARDS === */
 .card {
-  background: var(--card-bg);
+  background: var(--blanc);
   border-radius: 20px;
   padding: 30px 20px;
   text-align: center;
@@ -134,12 +133,12 @@ h2 {
 .card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 18px 35px rgba(0,0,0,0.2);
-  border-color: var(--rose-clair);
+  border-color: var(--accent);
 }
 
 .card h3 {
   font-family: 'Playfair Display', serif;
-  color: var(--noir);
+  color: var(--accent);
   font-size: 1.6rem;
   margin-bottom: 12px;
   transition: color 0.3s;
@@ -152,11 +151,11 @@ h2 {
 }
 
 .card:hover h3 {
-  color: var(--rose-clair);
+  color: var(--accent);
 }
 
 .card:hover p {
-  color: var(--noir);
+  color: var(--gris-foncé);
 }
 
 /* === FILE LIST STYLE === */
@@ -166,7 +165,7 @@ h2 {
 }
 
 .file-list li {
-  background: var(--card-bg);
+  background: var(--blanc);
   padding: 15px 20px;
   border-radius: 12px;
   margin-bottom: 15px;
@@ -182,21 +181,21 @@ h2 {
 .file-list li a {
   text-decoration: none;
   font-weight: bold;
-  color: var(--noir);
+  color: var(--gris-foncé);
 }
 
 .file-list li a:hover {
-  color: var(--rose-clair);
+  color: var(--accent);
 }
 
 /* === FOOTER === */
 footer {
-  background: var(--noir);
-  color: var(--rose-clair);
+  background: var(--blanc);
+  color: var(--accent);
   text-align: center;
   padding: 35px 15px;
   font-size: 0.95rem;
-  border-top: 2px solid var(--rose-clair);
+  border-top: 2px solid var(--accent);
   letter-spacing: 0.3px;
 }
 
