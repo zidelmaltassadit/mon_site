@@ -2,8 +2,106 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mes Travaux</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Travaux - Zidelmal Tassadit</title>
   <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e40af;
+      color: #fff;
+      padding: 25px;
+      text-align: center;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 25px;
+      transition: background 0.3s;
+    }
+
+    header nav ul li a:hover {
+      background-color: #3b82f6;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #1e40af;
+    }
+
+    p {
+      text-align: center;
+      color: #1e3a8a;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #1e3a8a;
+      font-weight: bold;
+    }
+
+    .card p {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background-color: #1e40af;
+      color: #fff;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,8 +110,8 @@
       <ul>
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="../notes/index.html">Notes</a></li>
-        <li><a href="../certifications/index.html">Certifications</a></li>
-        <li><a href="../Si_documents/index.html">SI Documents</a></li>
+        <li><a href="../certifications/index.html">Compétences</a></li>
+        <li><a href="../SI-documents/index.html">SI Documents</a></li>
         <li><a href="../projet-final/index.html">Projet Final</a></li>
       </ul>
     </nav>
@@ -23,97 +121,53 @@
     <h2>Travaux réalisés</h2>
     <p>Voici mes travaux et exercices pratiques réalisés durant le semestre :</p>
 
-    <ul class="file-list">
-      <!-- Processus Organisationnel -->
-      <li>
-        <strong>Processus Organisationnel</strong><br>
-        <a href="Processus_Organisationnel.pdf" target="_blank">📄 Voir / Télécharger PDF</a>
-      </li>
-
-      <!-- Fichier PGI Exercice -->
-      <li>
-        <strong>PGI Exercice</strong><br>
-        <a href="PGI_Exercice.xls" download>📥 Télécharger PGI_Exercice.xls</a>
-      </li>
-
-      <!-- Fichier TP Odoo -->
-      <li>
-        <strong>TP Odoo</strong><br>
-        <a href="TP_Odoo.pdf" target="_blank">📄 Consulter TP_Odoo.pdf</a>
-      </li>
-
-      <!-- Processus de gestion et modélisation -->
-      <li>
-        <strong>Processus de gestion et modélisation</strong><br>
-        <a href="Processus_de_gestion_et_modélisation.pdf" target="_blank">📄 Voir / Télécharger PDF</a>
-      </li>
-
-      <!-- Training schéma acteur flux -->
-      <li>
-        <strong>Training — Schéma acteur flux</strong><br>
-        <a href="Training_schéma_acteur_flux.pdf" target="_blank">📄 Voir / Télécharger PDF</a>
-      </li>
-
-      <!-- TD MCD -->
-      <li>
-        <strong>TD MCD</strong><br>
-        <a href="TD_MCD.pdf" target="_blank">📄 Voir / Télécharger PDF</a>
-      </li>
-
-      <!-- Diagramme Flux 1 -->
-      <li>
-        <strong>Diagramme de flux 1</strong><br>
-        <a href="diagramme_flux.jpg" target="_blank">🖼️ Voir l’image (JPG)</a>
-      </li>
-
-      <!-- Diagramme Flux 2 -->
-      <li>
-        <strong>Diagramme de flux 2</strong><br>
-        <a href="diagramme_flux_1.jpg" target="_blank">🖼️ Voir l’image (JPG)</a>
-      </li>
-    </ul>
-
-    <h3>🧩 Ci-joint les diagrammes réalisés en fonction des exercices :</h3>
-    <ul class="file-list">
-      <li>
-        <strong>Diagramme cas QUILOU</strong><br>
-        <a href="Diagramme_cas_QUILOU.pdf" target="_blank">📄 Voir / Télécharger PDF</a>
-      </li>
-      <li>
-        <strong>Diagramme gestion projet</strong><br>
-        <a href="Diagramme_gestion_projet.pdf" target="_blank">📄 Voir / Télécharger PDF</a>
-      </li>
-    </ul>
-
-    <h3>📘 Résolution du TD MCD</h3>
-    <p>Voici la résolution complète des exercices du TD MCD, accompagnée des deux diagrammes réalisés pour illustrer la modélisation :</p>
-    <ul class="file-list">
-      <li>
-        <strong>Diagramme Exercice 1</strong><br>
-        <a href="Diagramme_exercice1.png" target="_blank">🖼️ Voir le diagramme (PNG)</a>
-      </li>
-      <li>
-        <strong>Diagramme Exercice 2</strong><br>
-        <a href="Diagramme_exercice2.png" target="_blank">🖼️ Voir le diagramme (PNG)</a>
-      </li>
-    </ul>
-
-    <h3>📊 TP Gantt</h3>
-    <ul class="file-list">
-      <li>
-        <strong>TP Gantt (ODT)</strong><br>
-        <a href="Tp_gantt.odt" download>📥 Télécharger le document ODT</a>
-      </li>
-          <p>Voici le diagramme de Gantt réalisé pour l'organisation du projet, disponible en format ODT, PNG et PDF :</p>
-      <li>
-        <strong>Diagramme Gantt – Image</strong><br>
-        <a href="Online_Gantt.png" target="_blank">🖼️ Voir le diagramme (PNG)</a>
-      </li>
-      <li>
-        <strong>Diagramme Gantt – PDF</strong><br>
-        <a href="Online_Gantt.pdf" target="_blank">📄 Voir / Télécharger PDF</a>
-      </li>
-    </ul>
+    <div class="grid">
+      <div class="card">
+        <a href="Processus_Organisationnel.pdf" target="_blank">📄 Processus Organisationnel</a>
+      </div>
+      <div class="card">
+        <a href="PGI_Exercice.xls" download>📥 PGI Exercice</a>
+      </div>
+      <div class="card">
+        <a href="TP_Odoo.pdf" target="_blank">📄 TP Odoo</a>
+      </div>
+      <div class="card">
+        <a href="Processus_de_gestion_et_modélisation.pdf" target="_blank">📄 Processus de gestion et modélisation</a>
+      </div>
+      <div class="card">
+        <a href="Training_schéma_acteur_flux.pdf" target="_blank">📄 Training — Schéma acteur flux</a>
+      </div>
+      <div class="card">
+        <a href="TD_MCD.pdf" target="_blank">📄 TD MCD</a>
+      </div>
+      <div class="card">
+        <a href="diagramme_flux.jpg" target="_blank">🖼️ Diagramme de flux 1</a>
+      </div>
+      <div class="card">
+        <a href="diagramme_flux_1.jpg" target="_blank">🖼️ Diagramme de flux 2</a>
+      </div>
+      <div class="card">
+        <a href="Diagramme_cas_QUILOU.pdf" target="_blank">📄 Diagramme cas QUILOU</a>
+      </div>
+      <div class="card">
+        <a href="Diagramme_gestion_projet.pdf" target="_blank">📄 Diagramme gestion projet</a>
+      </div>
+      <div class="card">
+        <a href="Diagramme_exercice1.png" target="_blank">🖼️ Diagramme Exercice 1</a>
+      </div>
+      <div class="card">
+        <a href="Diagramme_exercice2.png" target="_blank">🖼️ Diagramme Exercice 2</a>
+      </div>
+      <div class="card">
+        <a href="Tp_gantt.odt" download>📥 TP Gantt (ODT)</a>
+      </div>
+      <div class="card">
+        <a href="Online_Gantt.png" target="_blank">🖼️ Diagramme Gantt – Image</a>
+      </div>
+      <div class="card">
+        <a href="Online_Gantt.pdf" target="_blank">📄 Diagramme Gantt – PDF</a>
+      </div>
+    </div>
   </main>
 
   <footer>
