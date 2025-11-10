@@ -5,126 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🌐 Ressources - Zidelmalt Tassadit</title>
   <link rel="stylesheet" href="../style.css">
-  <style>
-    /* === Style identique à SI-documents === */
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #e0f2fe, #bae6fd);
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    /* HEADER */
-    header {
-      background-color: #1e40af;
-      color: #fff;
-      text-align: center;
-      padding: 25px;
-    }
-
-    header h1 {
-      font-size: 2.3rem;
-      margin: 0;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 15px 0 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 18px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 8px 18px;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background-color: #3b82f6;
-    }
-
-    /* MAIN */
-    main {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-      text-align: center;
-    }
-
-    h2 {
-      color: #1e40af;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    p {
-      color: #1e3a8a;
-      margin-bottom: 40px;
-      font-size: 1.05rem;
-    }
-
-    /* CARDS */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 15px;
-      border: 2px solid #bfdbfe;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      padding: 25px;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-      border-color: #3b82f6;
-    }
-
-    .card a {
-      text-decoration: none;
-      color: #1e3a8a;
-      font-weight: bold;
-      font-size: 1.1rem;
-      display: block;
-      margin-bottom: 10px;
-      transition: color 0.3s;
-    }
-
-    .card a:hover {
-      color: #000;
-    }
-
-    .card p {
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 25px;
-      background-color: #1e40af;
-      color: #fff;
-      margin-top: 60px;
-      font-weight: 500;
-    }
-  </style>
 </head>
 <body>
+  <!-- HEADER -->
   <header>
     <h1>🌐 Ressources</h1>
     <nav>
@@ -139,36 +22,39 @@
     </nav>
   </header>
 
+  <!-- HERO -->
   <main>
     <h2>Veille et ressources personnelles</h2>
     <p>Voici les sites et outils utilisés durant les TP du module Système d’Information ainsi que des ressources complémentaires :</p>
 
-    <div class="grid">
-      <div class="card">
+    <div class="notes-container">
+      <div class="note-card">
         <a href="https://www.cairn.info/magazine-systeme-d-information.htm" target="_blank">📖 Revue Systèmes d’Information</a>
         <p>Articles et publications scientifiques sur les SI.</p>
       </div>
-      <div class="card">
+      <div class="note-card">
         <a href="https://openclassrooms.com/fr/courses/7335311-introduction-aux-systemes-dinformation" target="_blank">🎓 Cours OpenClassrooms</a>
         <p>Introduction aux systèmes d’information.</p>
       </div>
-      <div class="card">
+      <div class="note-card">
         <a href="https://www.drawio.com/" target="_blank">🖊️ Draw.io</a>
         <p>Création de diagrammes et schémas de flux.</p>
       </div>
-      <div class="card">
+      <div class="note-card">
         <a href="https://www.ampps.com/" target="_blank">💾 AMPPS</a>
         <p>Serveur local pour PHP/MySQL utilisé durant les TP.</p>
       </div>
-      <div class="card">
+      <div class="note-card">
         <a href="https://www.odoo.com/fr_FR" target="_blank">📊 Odoo</a>
         <p>ERP utilisé pour les exercices pratiques.</p>
       </div>
     </div>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 - Portfolio de Zidelmalt Tassadit</p>
   </footer>
 </body>
 </html>
+s
