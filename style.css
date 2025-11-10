@@ -1,19 +1,17 @@
-/* 💎 Thème Élégance Luxe - Bleu Nuit & Champagne */
+/* 💎 Thème Moderne Élégant - Bleu Pétrole & Corail */
 
 /* === POLICES + COULEURS === */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-  --bleu-nuit: #1b1f3b;
-  --bleu-foncé: #2b2f50;
-  --beige-champagne: #d9c4a8;
-  --blanc-cassé: #f8f5f2;
-  --gris-fond: #ece9e4;
-  --texte: #2c2c2c;
-  --card-bg: rgba(255,255,255,0.95);
+  --bleu-foncé: #0a1f2f;
+  --bleu-petrole: #1e3d59;
+  --corail-doux: #ff7f50;
+  --blanc-fond: #f5f5f5;
+  --texte: #1c1c1c;
+  --card-bg: #ffffff;
   --ombre: rgba(0,0,0,0.12);
-  --accent: #c9a66b; /* or doux / champagne */
-  --hover-bg: rgba(201,166,107,0.1);
+  --hover-bg: rgba(255,127,80,0.1);
 }
 
 /* === RESET === */
@@ -26,7 +24,7 @@
 /* === BODY === */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, var(--gris-fond), var(--blanc-cassé));
+  background: var(--blanc-fond);
   color: var(--texte);
   line-height: 1.7;
 }
@@ -35,9 +33,9 @@ body {
 header {
   text-align: center;
   padding: 80px 20px 50px;
-  background: linear-gradient(135deg, var(--bleu-nuit), var(--bleu-foncé));
-  color: var(--beige-champagne);
-  border-bottom: 3px solid var(--accent);
+  background: linear-gradient(135deg, var(--bleu-foncé), var(--bleu-petrole));
+  color: var(--corail-doux);
+  border-bottom: 3px solid var(--corail-doux);
   box-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
 
@@ -49,7 +47,7 @@ header h1 {
 
 header .subtitle {
   font-size: 1.1rem;
-  color: var(--beige-champagne);
+  color: var(--corail-doux);
   margin-top: 10px;
 }
 
@@ -64,19 +62,19 @@ nav ul {
 }
 
 nav ul li a {
-  color: var(--beige-champagne);
+  color: var(--corail-doux);
   text-decoration: none;
   padding: 10px 25px;
-  border: 1px solid var(--beige-champagne);
+  border: 1px solid var(--corail-doux);
   border-radius: 40px;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-  background: var(--accent);
-  color: var(--bleu-nuit);
-  box-shadow: 0 4px 12px rgba(201,166,107,0.4);
+  background: var(--corail-doux);
+  color: var(--blanc-fond);
+  box-shadow: 0 4px 12px rgba(255,127,80,0.4);
 }
 
 /* === MAIN CONTENT === */
@@ -90,7 +88,7 @@ h2 {
   text-align: center;
   margin-bottom: 40px;
   font-family: 'Playfair Display', serif;
-  color: var(--bleu-nuit);
+  color: var(--bleu-foncé);
   font-size: 2.2rem;
 }
 
@@ -116,7 +114,6 @@ h2 {
   transition: all 0.5s ease;
 }
 
-/* Éclat subtil */
 .card::before {
   content: '';
   position: absolute;
@@ -137,12 +134,12 @@ h2 {
 .card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 18px 35px rgba(0,0,0,0.18);
-  border-color: var(--accent);
+  border-color: var(--corail-doux);
 }
 
 .card h3 {
   font-family: 'Playfair Display', serif;
-  color: var(--bleu-nuit);
+  color: var(--bleu-foncé);
   font-size: 1.6rem;
   margin-bottom: 12px;
   transition: color 0.3s;
@@ -155,11 +152,11 @@ h2 {
 }
 
 .card:hover h3 {
-  color: var(--accent);
+  color: var(--corail-doux);
 }
 
 .card:hover p {
-  color: var(--bleu-nuit);
+  color: var(--bleu-foncé);
 }
 
 /* === FILE LIST STYLE === */
@@ -177,47 +174,6 @@ h2 {
   transition: all 0.3s;
 }
 
-.file-list li:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-}
+.file-list li:hover
 
-.file-list li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--bleu-nuit);
-}
 
-.file-list li a:hover {
-  color: var(--accent);
-}
-
-/* === FOOTER === */
-footer {
-  background: linear-gradient(135deg, var(--bleu-nuit), var(--bleu-foncé));
-  color: var(--beige-champagne);
-  text-align: center;
-  padding: 35px 15px;
-  font-size: 0.95rem;
-  border-top: 2px solid var(--accent);
-  letter-spacing: 0.3px;
-}
-
-/* === RESPONSIVE === */
-@media screen and (max-width: 768px) {
-  header h1 {
-    font-size: 2.2rem;
-  }
-
-  nav ul {
-    gap: 12px;
-  }
-
-  .card h3 {
-    font-size: 1.3rem;
-  }
-
-  main {
-    padding: 30px 15px 60px;
-  }
-}
