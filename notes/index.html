@@ -4,6 +4,88 @@
   <meta charset="UTF-8">
   <title>Notes de cours</title>
   <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .notes-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .note-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .note-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .note-card a {
+      text-decoration: none;
+      color: #1e3a8a;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .note-card img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e3a8a;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -21,21 +103,34 @@
 
   <main>
     <h2>Mes notes personnelles</h2>
-    <p>Voici mes notes de cours, disponibles en téléchargement ou consultation directe :</p>
+    <p style="text-align:center;">Toutes mes notes de cours sont disponibles en téléchargement :</p>
 
-  <ul class="file-list">
-  <li><a href="Chapitre1.pdf" target="_blank">📄 Chapitre 1 — Introduction aux SI (PDF)</a></li>
-  <li><a href="Cours_PGI.pdf" target="_blank">📄 Cours PGI (PDF)</a></li>
-  <li><a href="Les_livrables_SI.pdf" target="_blank">📘 Les livrables SI (PDF)</a></li>
-  <li><a href="Cours_gestion_de_projet.pdf" target="_blank">📄 Cours Gestion de Projet (PDF)</a></li>
-  <li><a href="Dossier_gestion_projet.pdf" target="_blank">📄 Dossier de Gestion Projet (PDF)</a></li>
-</ul>
-
-
+    <div class="notes-container">
+      <div class="note-card">
+        <img src="../assets/pdf_icon.png" alt="PDF">
+        <a href="Chapitre1.pdf" target="_blank">Chapitre 1 — Introduction aux SI</a>
+      </div>
+      <div class="note-card">
+        <img src="../assets/pdf_icon.png" alt="PDF">
+        <a href="Cours_PGI.pdf" target="_blank">Cours PGI</a>
+      </div>
+      <div class="note-card">
+        <img src="../assets/pdf_icon.png" alt="PDF">
+        <a href="Les_livrables_SI.pdf" target="_blank">Les livrables SI</a>
+      </div>
+      <div class="note-card">
+        <img src="../assets/pdf_icon.png" alt="PDF">
+        <a href="Cours_gestion_de_projet.pdf" target="_blank">Cours Gestion de Projet</a>
+      </div>
+      <div class="note-card">
+        <img src="../assets/pdf_icon.png" alt="PDF">
+        <a href="Dossier_gestion_projet.pdf" target="_blank">Dossier de Gestion Projet</a>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>© 2025 - Portfolio de Zidelmal Tassadit</p>
+    <p>© 2025 - Portfolio de Zidelmalt Assa</p>
   </footer>
 </body>
 </html>
