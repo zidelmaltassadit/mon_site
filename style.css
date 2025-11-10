@@ -1,17 +1,17 @@
-/* 🌸 Thème Féminin - Rose Bonbon, Blanc & Noir */
+/* 🌸 Thème féminin - Rose pastel, blanc et touches de noir */
 
 /* === POLICES + COULEURS === */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-  --rose-bonbon: #ff7eb9; /* rose bonbon vif */
-  --rose-clair: #ffd1e6;  /* rose pastel doux */
-  --blanc: #ffffff;
-  --noir: #1b1b1b;
-  --gris-foncé: #333333;
-  --card-bg: #ffffff;
-  --hover-bg: rgba(255,126,185,0.2);
-  --ombre: rgba(0,0,0,0.15);
+  --rose-pastel: #ffd1e6;      /* rose clair doux */
+  --rose-vif: #ff85a2;         /* accents */
+  --blanc: #ffffff;             /* fonds et cartes */
+  --noir: #1b1b1b;             /* texte principal */
+  --gris-foncé: #333333;        /* texte secondaire */
+  --card-bg: #ffffff;           /* fond des cartes */
+  --hover-bg: rgba(255,133,162,0.2); /* effet hover */
+  --ombre: rgba(0,0,0,0.15);    /* ombre */
 }
 
 /* === RESET === */
@@ -24,7 +24,7 @@
 /* === BODY === */
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--rose-clair);
+  background: var(--rose-pastel);
   color: var(--noir);
   line-height: 1.7;
 }
@@ -33,21 +33,21 @@ body {
 header {
   text-align: center;
   padding: 80px 20px 50px;
-  background: var(--rose-bonbon);
-  color: var(--blanc);
-  border-bottom: 2px solid var(--noir);
+  background: var(--blanc);
+  color: var(--noir);
+  border-bottom: 2px solid var(--rose-vif);
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
-  color: var(--blanc);
+  color: var(--rose-vif);
 }
 
 header .subtitle {
   font-size: 1.1rem;
-  color: #ffe6f0;
+  color: var(--gris-foncé);
   margin-top: 10px;
 }
 
@@ -62,19 +62,19 @@ nav ul {
 }
 
 nav ul li a {
-  color: var(--blanc);
+  color: var(--rose-vif);
   text-decoration: none;
   padding: 10px 25px;
-  border: 1px solid var(--blanc);
+  border: 1px solid var(--rose-vif);
   border-radius: 40px;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-  background: var(--blanc);
-  color: var(--rose-bonbon);
-  box-shadow: 0 4px 12px rgba(255,126,185,0.4);
+  background: var(--rose-vif);
+  color: var(--blanc);
+  box-shadow: 0 4px 12px rgba(255,133,162,0.4);
 }
 
 /* === MAIN CONTENT === */
@@ -88,7 +88,7 @@ h2 {
   text-align: center;
   margin-bottom: 40px;
   font-family: 'Playfair Display', serif;
-  color: var(--rose-bonbon);
+  color: var(--rose-vif);
   font-size: 2.2rem;
 }
 
@@ -134,12 +134,12 @@ h2 {
 .card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 18px 35px rgba(0,0,0,0.2);
-  border-color: var(--rose-bonbon);
+  border-color: var(--rose-vif);
 }
 
 .card h3 {
   font-family: 'Playfair Display', serif;
-  color: var(--rose-bonbon);
+  color: var(--rose-vif);
   font-size: 1.6rem;
   margin-bottom: 12px;
   transition: color 0.3s;
@@ -152,7 +152,7 @@ h2 {
 }
 
 .card:hover h3 {
-  color: var(--rose-bonbon);
+  color: var(--rose-vif);
 }
 
 .card:hover p {
@@ -186,17 +186,17 @@ h2 {
 }
 
 .file-list li a:hover {
-  color: var(--rose-bonbon);
+  color: var(--rose-vif);
 }
 
 /* === FOOTER === */
 footer {
   background: var(--blanc);
-  color: var(--rose-bonbon);
+  color: var(--rose-vif);
   text-align: center;
   padding: 35px 15px;
   font-size: 0.95rem;
-  border-top: 2px solid var(--rose-bonbon);
+  border-top: 2px solid var(--rose-vif);
   letter-spacing: 0.3px;
 }
 
@@ -211,4 +211,10 @@ footer {
   }
 
   .card h3 {
-    font-size: 1
+    font-size: 1.3rem;
+  }
+
+  main {
+    padding: 30px 15px 60px;
+  }
+}
