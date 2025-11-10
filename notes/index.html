@@ -5,123 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🌸 Mes Travaux - Zidelmalt Tassadit</title>
   <link rel="stylesheet" href="../style.css">
-  <style>
-    /* === Couleurs style SI-documents (bleu pastel / bleu foncé / blanc) === */
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #e0f2fe, #bae6fd);
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    /* === HEADER === */
-    header {
-      background-color: #1e40af;
-      color: #fff;
-      text-align: center;
-      padding: 25px;
-    }
-
-    header h1 {
-      font-size: 2.3rem;
-      margin: 0;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 15px 0 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 18px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 8px 18px;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background-color: #3b82f6;
-    }
-
-    /* === MAIN === */
-    main {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
-    }
-
-    h2 {
-      color: #1e40af;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    p {
-      color: #1e3a8a;
-      margin-bottom: 40px;
-      font-size: 1.05rem;
-    }
-
-    .notes-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-    }
-
-    .note-card {
-      background: #fff;
-      border-radius: 15px;
-      border: 2px solid #bfdbfe;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      padding: 25px;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-    }
-
-    .note-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-      border-color: #3b82f6;
-    }
-
-    .note-card img {
-      width: 60px;
-      margin-bottom: 12px;
-    }
-
-    .note-card a {
-      text-decoration: none;
-      color: #1e3a8a;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: color 0.3s;
-    }
-
-    .note-card a:hover {
-      color: #000;
-    }
-
-    /* === FOOTER === */
-    footer {
-      text-align: center;
-      padding: 25px;
-      background-color: #1e40af;
-      color: #fff;
-      margin-top: 60px;
-      font-weight: 500;
-    }
-  </style>
 </head>
 <body>
+  <!-- HEADER -->
   <header>
     <h1>🌸 Mes Travaux</h1>
     <nav>
@@ -135,29 +21,38 @@
     </nav>
   </header>
 
-  <main>
+  <!-- HERO -->
+  <section class="hero">
     <h2>Travaux Réalisés</h2>
-    <p>Voici mes travaux et exercices pratiques réalisés durant le semestre :</p>
+    <p style="text-align:center; max-width:700px; margin:0 auto; color:#333;">
+      Voici mes travaux et exercices pratiques réalisés durant le semestre :
+    </p>
+  </section>
 
-    <div class="notes-container">
-      <div class="note-card"><a href="Processus_Organisationnel.pdf" target="_blank">📄 Processus Organisationnel</a></div>
-      <div class="note-card"><a href="PGI_Exercice.xls" download>📥 PGI Exercice</a></div>
-      <div class="note-card"><a href="TP_Odoo.pdf" target="_blank">📄 TP Odoo</a></div>
-      <div class="note-card"><a href="Processus_de_gestion_et_modélisation.pdf" target="_blank">📄 Processus de gestion et modélisation</a></div>
-      <div class="note-card"><a href="Training_schéma_acteur_flux.pdf" target="_blank">📄 Training — Schéma acteur flux</a></div>
-      <div class="note-card"><a href="TD_MCD.pdf" target="_blank">📄 TD MCD</a></div>
-      <div class="note-card"><a href="diagramme_flux.jpg" target="_blank">🖼️ Diagramme de flux 1</a></div>
-      <div class="note-card"><a href="diagramme_flux_1.jpg" target="_blank">🖼️ Diagramme de flux 2</a></div>
-      <div class="note-card"><a href="Diagramme_cas_QUILOU.pdf" target="_blank">📄 Diagramme cas QUILOU</a></div>
-      <div class="note-card"><a href="Diagramme_gestion_projet.pdf" target="_blank">📄 Diagramme gestion projet</a></div>
-      <div class="note-card"><a href="Diagramme_exercice1.png" target="_blank">🖼️ Diagramme Exercice 1</a></div>
-      <div class="note-card"><a href="Diagramme_exercice2.png" target="_blank">🖼️ Diagramme Exercice 2</a></div>
-      <div class="note-card"><a href="Tp_gantt.odt" download>📥 TP Gantt (ODT)</a></div>
-      <div class="note-card"><a href="Online_Gantt.png" target="_blank">🖼️ Diagramme Gantt – Image</a></div>
-      <div class="note-card"><a href="Online_Gantt.pdf" target="_blank">📄 Diagramme Gantt – PDF</a></div>
-    </div>
+  <!-- TRAVAUX -->
+  <main>
+    <section class="documents">
+      <ul class="file-list">
+        <li><a href="Processus_Organisationnel.pdf" target="_blank">📄 Processus Organisationnel</a></li>
+        <li><a href="PGI_Exercice.xls" download>📥 PGI Exercice</a></li>
+        <li><a href="TP_Odoo.pdf" target="_blank">📄 TP Odoo</a></li>
+        <li><a href="Processus_de_gestion_et_modélisation.pdf" target="_blank">📄 Processus de gestion et modélisation</a></li>
+        <li><a href="Training_schéma_acteur_flux.pdf" target="_blank">📄 Training — Schéma acteur flux</a></li>
+        <li><a href="TD_MCD.pdf" target="_blank">📄 TD MCD</a></li>
+        <li><a href="diagramme_flux.jpg" target="_blank">🖼️ Diagramme de flux 1</a></li>
+        <li><a href="diagramme_flux_1.jpg" target="_blank">🖼️ Diagramme de flux 2</a></li>
+        <li><a href="Diagramme_cas_QUILOU.pdf" target="_blank">📄 Diagramme cas QUILOU</a></li>
+        <li><a href="Diagramme_gestion_projet.pdf" target="_blank">📄 Diagramme gestion projet</a></li>
+        <li><a href="Diagramme_exercice1.png" target="_blank">🖼️ Diagramme Exercice 1</a></li>
+        <li><a href="Diagramme_exercice2.png" target="_blank">🖼️ Diagramme Exercice 2</a></li>
+        <li><a href="Tp_gantt.odt" download>📥 TP Gantt (ODT)</a></li>
+        <li><a href="Online_Gantt.png" target="_blank">🖼️ Diagramme Gantt – Image</a></li>
+        <li><a href="Online_Gantt.pdf" target="_blank">📄 Diagramme Gantt – PDF</a></li>
+      </ul>
+    </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 - Portfolio de Zidelmalt Tassadit</p>
   </footer>
