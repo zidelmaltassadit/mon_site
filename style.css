@@ -1,17 +1,17 @@
-/* 💎 Thème Moderne Élégant - Bleu Pétrole & Corail */
+/* 💎 Thème Moderne - Rose Clair, Blanc & Noir */
 
 /* === POLICES + COULEURS === */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-  --bleu-foncé: #0a1f2f;
-  --bleu-petrole: #1e3d59;
-  --corail-doux: #ff7f50;
-  --blanc-fond: #f5f5f5;
-  --texte: #1c1c1c;
+  --noir: #0d0d0d;
+  --blanc: #ffffff;
+  --rose-clair: #ffb6c1;
+  --gris-foncé: #333333;
+  --fond: #fdfdfd;
   --card-bg: #ffffff;
-  --ombre: rgba(0,0,0,0.12);
-  --hover-bg: rgba(255,127,80,0.1);
+  --ombre: rgba(0,0,0,0.15);
+  --hover-bg: rgba(255,182,193,0.1);
 }
 
 /* === RESET === */
@@ -24,8 +24,8 @@
 /* === BODY === */
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--blanc-fond);
-  color: var(--texte);
+  background: var(--fond);
+  color: var(--gris-foncé);
   line-height: 1.7;
 }
 
@@ -33,10 +33,10 @@ body {
 header {
   text-align: center;
   padding: 80px 20px 50px;
-  background: linear-gradient(135deg, var(--bleu-foncé), var(--bleu-petrole));
-  color: var(--corail-doux);
-  border-bottom: 3px solid var(--corail-doux);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  background: var(--noir);
+  color: var(--rose-clair);
+  border-bottom: 2px solid var(--rose-clair);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
 header h1 {
@@ -47,7 +47,7 @@ header h1 {
 
 header .subtitle {
   font-size: 1.1rem;
-  color: var(--corail-doux);
+  color: var(--rose-clair);
   margin-top: 10px;
 }
 
@@ -62,19 +62,19 @@ nav ul {
 }
 
 nav ul li a {
-  color: var(--corail-doux);
+  color: var(--rose-clair);
   text-decoration: none;
   padding: 10px 25px;
-  border: 1px solid var(--corail-doux);
+  border: 1px solid var(--rose-clair);
   border-radius: 40px;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-  background: var(--corail-doux);
-  color: var(--blanc-fond);
-  box-shadow: 0 4px 12px rgba(255,127,80,0.4);
+  background: var(--rose-clair);
+  color: var(--noir);
+  box-shadow: 0 4px 12px rgba(255,182,193,0.4);
 }
 
 /* === MAIN CONTENT === */
@@ -88,7 +88,7 @@ h2 {
   text-align: center;
   margin-bottom: 40px;
   font-family: 'Playfair Display', serif;
-  color: var(--bleu-foncé);
+  color: var(--noir);
   font-size: 2.2rem;
 }
 
@@ -105,7 +105,7 @@ h2 {
   border-radius: 20px;
   padding: 30px 20px;
   text-align: center;
-  color: var(--texte);
+  color: var(--gris-foncé);
   text-decoration: none;
   position: relative;
   overflow: hidden;
@@ -133,13 +133,13 @@ h2 {
 
 .card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 18px 35px rgba(0,0,0,0.18);
-  border-color: var(--corail-doux);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.2);
+  border-color: var(--rose-clair);
 }
 
 .card h3 {
   font-family: 'Playfair Display', serif;
-  color: var(--bleu-foncé);
+  color: var(--noir);
   font-size: 1.6rem;
   margin-bottom: 12px;
   transition: color 0.3s;
@@ -152,11 +152,11 @@ h2 {
 }
 
 .card:hover h3 {
-  color: var(--corail-doux);
+  color: var(--rose-clair);
 }
 
 .card:hover p {
-  color: var(--bleu-foncé);
+  color: var(--noir);
 }
 
 /* === FILE LIST STYLE === */
@@ -174,6 +174,47 @@ h2 {
   transition: all 0.3s;
 }
 
-.file-list li:hover
+.file-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
 
+.file-list li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--noir);
+}
 
+.file-list li a:hover {
+  color: var(--rose-clair);
+}
+
+/* === FOOTER === */
+footer {
+  background: var(--noir);
+  color: var(--rose-clair);
+  text-align: center;
+  padding: 35px 15px;
+  font-size: 0.95rem;
+  border-top: 2px solid var(--rose-clair);
+  letter-spacing: 0.3px;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  nav ul {
+    gap: 12px;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  main {
+    padding: 30px 15px 60px;
+  }
+}
