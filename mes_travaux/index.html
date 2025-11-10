@@ -6,10 +6,10 @@
   <title>🌸 Mes Travaux - Zidelmalt Tassadit</title>
   <link rel="stylesheet" href="../style.css">
   <style>
-    /* === Thème rose pastel / blanc / noir === */
+    /* === Thème rose pastel / blanc / noir (identique à SI-documents) === */
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #ffe6f2, #ffffff);
+      background: linear-gradient(135deg, #ffe6f2, #fff);
       margin: 0;
       padding: 0;
       color: #333;
@@ -19,37 +19,37 @@
     header {
       background-color: #ffb6c1;
       color: #fff;
-      padding: 25px;
       text-align: center;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      padding: 25px 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     }
 
     header h1 {
-      font-size: 2.2rem;
+      font-size: 2.3rem;
       margin: 0;
     }
 
-    header nav ul {
+    nav ul {
       list-style: none;
       padding: 0;
+      margin: 15px 0 0;
       display: flex;
       justify-content: center;
-      gap: 20px;
       flex-wrap: wrap;
-      margin-top: 15px;
+      gap: 18px;
     }
 
-    header nav ul li a {
+    nav ul li a {
       color: #fff;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       background: rgba(255,255,255,0.15);
-      padding: 8px 16px;
+      padding: 8px 18px;
       border-radius: 8px;
       transition: all 0.3s ease;
     }
 
-    header nav ul li a:hover {
+    nav ul li a:hover {
       background: #fff;
       color: #ff69b4;
     }
@@ -71,7 +71,7 @@
     p {
       color: #444;
       margin-bottom: 40px;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
     }
 
     .grid {
@@ -83,10 +83,10 @@
     .card {
       background: #fff;
       border-radius: 15px;
+      border: 2px solid #ffe4ec;
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
       padding: 20px;
-      transition: transform 0.3s, box-shadow 0.3s;
-      border: 2px solid #ffe4ec;
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
     }
 
     .card:hover {
@@ -100,12 +100,11 @@
       color: #ff69b4;
       font-weight: bold;
       font-size: 1rem;
+      transition: color 0.3s ease;
     }
 
-    .card p {
-      margin-top: 10px;
-      font-size: 0.95rem;
-      color: #555;
+    .card a:hover {
+      color: #000;
     }
 
     /* === FOOTER === */
@@ -114,8 +113,9 @@
       padding: 25px;
       background-color: #ffb6c1;
       color: #fff;
-      margin-top: 50px;
-      box-shadow: 0 -3px 8px rgba(0,0,0,0.1);
+      margin-top: 60px;
+      font-weight: 500;
+      box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
     }
   </style>
 </head>
