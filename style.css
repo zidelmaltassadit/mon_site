@@ -5,6 +5,7 @@
 
 :root {
   --bleu-nuit: #1b1f3b;
+  --bleu-foncé: #2b2f50;
   --beige-champagne: #d9c4a8;
   --blanc-cassé: #f8f5f2;
   --gris-fond: #ece9e4;
@@ -34,7 +35,7 @@ body {
 header {
   text-align: center;
   padding: 80px 20px 50px;
-  background: linear-gradient(135deg, var(--bleu-nuit), #2b2f50);
+  background: linear-gradient(135deg, var(--bleu-nuit), var(--bleu-foncé));
   color: var(--beige-champagne);
   border-bottom: 3px solid var(--accent);
   box-shadow: 0 4px 20px rgba(0,0,0,0.25);
@@ -46,6 +47,13 @@ header h1 {
   letter-spacing: 1px;
 }
 
+header .subtitle {
+  font-size: 1.1rem;
+  color: var(--beige-champagne);
+  margin-top: 10px;
+}
+
+/* === NAVIGATION === */
 nav ul {
   list-style: none;
   display: flex;
@@ -154,13 +162,62 @@ h2 {
   color: var(--bleu-nuit);
 }
 
+/* === FILE LIST STYLE === */
+.file-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.file-list li {
+  background: var(--card-bg);
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 18px var(--ombre);
+  transition: all 0.3s;
+}
+
+.file-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.file-list li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--bleu-nuit);
+}
+
+.file-list li a:hover {
+  color: var(--accent);
+}
+
 /* === FOOTER === */
 footer {
-  background: linear-gradient(135deg, var(--bleu-nuit), #2b2f50);
+  background: linear-gradient(135deg, var(--bleu-nuit), var(--bleu-foncé));
   color: var(--beige-champagne);
   text-align: center;
   padding: 35px 15px;
   font-size: 0.95rem;
   border-top: 2px solid var(--accent);
   letter-spacing: 0.3px;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  nav ul {
+    gap: 12px;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  main {
+    padding: 30px 15px 60px;
+  }
 }
