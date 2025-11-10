@@ -1,17 +1,18 @@
-/* 💎 Thème Luxe Élégant - Bleu Profond Amélioré */
+/* 💎 Thème Élégance Luxe - Bleu Nuit & Champagne */
 
 /* === POLICES + COULEURS === */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-  --noir: #0b0d12;
-  --bleu-profond: #1e3a5f;
-  --bleu-clair: #4a6fa5;
-  --gris-fond: #f5f6f8;
-  --texte: #2b2b2b;
-  --card-bg: #ffffff;
-  --ombre: rgba(0,0,0,0.08);
-  --accent: #c0a062; /* or doux / champagne */
+  --bleu-nuit: #1b1f3b;
+  --beige-champagne: #d9c4a8;
+  --blanc-cassé: #f8f5f2;
+  --gris-fond: #ece9e4;
+  --texte: #2c2c2c;
+  --card-bg: rgba(255,255,255,0.95);
+  --ombre: rgba(0,0,0,0.12);
+  --accent: #c9a66b; /* or doux / champagne */
+  --hover-bg: rgba(201,166,107,0.1);
 }
 
 /* === RESET === */
@@ -24,7 +25,7 @@
 /* === BODY === */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--gris-fond);
+  background: linear-gradient(135deg, var(--gris-fond), var(--blanc-cassé));
   color: var(--texte);
   line-height: 1.7;
 }
@@ -32,40 +33,33 @@ body {
 /* === HEADER === */
 header {
   text-align: center;
-  padding: 70px 20px 50px;
-  background: linear-gradient(135deg, var(--noir), var(--bleu-profond));
-  color: var(--accent);
+  padding: 80px 20px 50px;
+  background: linear-gradient(135deg, var(--bleu-nuit), #2b2f50);
+  color: var(--beige-champagne);
   border-bottom: 3px solid var(--accent);
   box-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
+  font-size: 3rem;
   letter-spacing: 1px;
 }
 
-.subtitle {
-  font-size: 1.1rem;
-  color: #ddd;
-  margin-top: 10px;
-}
-
-/* === NAVIGATION === */
 nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 30px;
   gap: 18px;
+  margin-top: 25px;
 }
 
 nav ul li a {
-  color: var(--accent);
+  color: var(--beige-champagne);
   text-decoration: none;
-  padding: 10px 20px;
-  border: 1px solid var(--accent);
+  padding: 10px 25px;
+  border: 1px solid var(--beige-champagne);
   border-radius: 40px;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -73,47 +67,37 @@ nav ul li a {
 
 nav ul li a:hover {
   background: var(--accent);
-  color: var(--noir);
-  box-shadow: 0 4px 12px rgba(192,160,98,0.4);
+  color: var(--bleu-nuit);
+  box-shadow: 0 4px 12px rgba(201,166,107,0.4);
 }
 
-/* === SECTION HERO === */
-.hero {
+/* === MAIN CONTENT === */
+main {
+  max-width: 1150px;
+  margin: 50px auto;
+  padding: 0 20px 80px;
+}
+
+h2 {
   text-align: center;
-  padding: 90px 20px;
-  background: linear-gradient(145deg, #ffffff, #eef1f6);
-}
-
-.hero h2 {
+  margin-bottom: 40px;
   font-family: 'Playfair Display', serif;
-  color: var(--bleu-profond);
+  color: var(--bleu-nuit);
   font-size: 2.2rem;
-  margin-bottom: 15px;
 }
 
-.hero p {
-  max-width: 750px;
-  margin: 0 auto 30px;
-  color: #555;
-  font-size: 1.1rem;
-  line-height: 1.7;
-}
-
-/* === GRILLE === */
+/* === GRID / CARDS === */
 .grid {
-  max-width: 1200px;
-  margin: 60px auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 35px;
-  padding: 0 20px 70px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
 }
 
-/* === CARTES === */
+/* === CARDS === */
 .card {
   background: var(--card-bg);
-  border-radius: 18px;
-  padding: 30px;
+  border-radius: 20px;
+  padding: 30px 20px;
   text-align: center;
   color: var(--texte);
   text-decoration: none;
@@ -121,7 +105,7 @@ nav ul li a:hover {
   overflow: hidden;
   border: 1px solid #e5e5e5;
   box-shadow: 0 8px 25px var(--ombre);
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 }
 
 /* Éclat subtil */
@@ -132,7 +116,7 @@ nav ul li a:hover {
   left: -60%;
   width: 220%;
   height: 220%;
-  background: radial-gradient(circle at center, rgba(74,111,165,0.1), transparent 70%);
+  background: radial-gradient(circle at center, var(--hover-bg), transparent 70%);
   transform: rotate(25deg);
   transition: all 0.6s ease;
 }
@@ -142,24 +126,24 @@ nav ul li a:hover {
   left: -20%;
 }
 
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+  border-color: var(--accent);
+}
+
 .card h3 {
   font-family: 'Playfair Display', serif;
-  color: var(--bleu-profond);
-  font-size: 1.5rem;
+  color: var(--bleu-nuit);
+  font-size: 1.6rem;
   margin-bottom: 12px;
   transition: color 0.3s;
 }
 
 .card p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #555;
   transition: color 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
-  border-color: var(--accent);
 }
 
 .card:hover h3 {
@@ -167,15 +151,15 @@ nav ul li a:hover {
 }
 
 .card:hover p {
-  color: var(--bleu-profond);
+  color: var(--bleu-nuit);
 }
 
 /* === FOOTER === */
 footer {
-  background: linear-gradient(135deg, var(--noir), var(--bleu-profond));
-  color: var(--accent);
+  background: linear-gradient(135deg, var(--bleu-nuit), #2b2f50);
+  color: var(--beige-champagne);
   text-align: center;
-  padding: 30px 10px;
+  padding: 35px 15px;
   font-size: 0.95rem;
   border-top: 2px solid var(--accent);
   letter-spacing: 0.3px;
