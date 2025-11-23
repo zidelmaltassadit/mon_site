@@ -108,12 +108,16 @@ nav ul li a:hover {
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
+
+    width: 100%; /* S'assure qu'elle prend toute la largeur */
+    min-height: calc(100vh - 80px);
     
     /* Centrage du contenu */
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     
     padding: 100px 5%; 
     min-height: 80vh; 
