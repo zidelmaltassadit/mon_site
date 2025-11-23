@@ -5,10 +5,10 @@
 :root {
     /* Couleurs du Thème (Rose, Anthracite, Blanc) */
     --primary-color: #e91e63;   /* Rose (pour les accents, titres H3, boutons) */
-    --secondary-color: #36454F; /* Anthracite/Noir (pour le texte principal, header, titres H1/H2) */
+    --secondary-color: #2c3e50; /* NOUVEAU GRIS FONCÉ (Anthracite très foncé) */
     --accent-light: #fce4ec;   /* Rose très clair (pour les fonds légers/bordures) */
     --background-white: #ffffff; /* Blanc pur (pour le fond principal) */
-    --text-color: #444444;      /* Gris foncé pour la lisibilité du texte */
+    --text-color: #34495e;      /* NOUVEAU GRIS FONCÉ pour le texte des paragraphes */
 }
 
 /* Réinitialisation de base */
