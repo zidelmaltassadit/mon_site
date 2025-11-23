@@ -1,63 +1,87 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📂 Documents SI - Zidelmalt Tassadit</title>
-  <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-  <!-- HEADER -->
-  <header>
-    <h1>📁 Documents SI</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="../mes_travaux/index.html">Mes Travaux</a></li>
-        <li><a href="../notes/index.html">Notes</a></li>
-        <li><a href="../certifications/index.html">Certifications</a></li>
-      </ul>
-    </nav>
-  </header>
+/* --- NOUVEAU : STYLES POUR LES PAGES DE RUBRIQUE (Si_documents/index.html, etc.) --- */
 
-  <!-- HERO -->
-  <section class="hero">
-    <h2>🧾 Liste des documents</h2>
-    <p style="text-align:center; max-width:700px; margin:0 auto; color:#333;">
-      Voici mes documents liés au module de Systèmes d’Information, disponibles pour consultation ou téléchargement. Tous les fichiers sont organisés de manière claire et facile d’accès.
-    </p>
-  </section>
+/* Description sous le titre de la page */
+.section-description {
+    text-align: center;
+    max-width: 900px;
+    margin: 15px auto 5px auto;
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}
 
-  <!-- DOCUMENTS LIST -->
-  <main>
-    <section class="notes-container">
-      <div class="note-card">
-        <a href="1-TP1-annexe-ExempleCahierDesChargesIntranetINRA.pdf" target="_blank">📘 Annexe – Exemple Cahier des Charges Intranet</a>
-      </div>
-      <div class="note-card">
-        <a href="Cahier-des-charges-devis-support.pdf" target="_blank">📄 Cahier des charges – Devis Support</a>
-      </div>
-      <div class="note-card">
-        <a href="Cours_information.pdf" target="_blank">📗 Cours Information</a>
-      </div>
-      <div class="note-card">
-        <a href="Structure_portfolio.pdf" target="_blank">🗂️ Structure Portfolio</a>
-      </div>
-      <div class="note-card">
-        <a href="TD_MCD.pdf" target="_blank">🧩 TD MCD</a>
-      </div>
-      <div class="note-card">
-        <a href="Training_shéma_acteur_flux.pdf" target="_blank">🔄 Training – Schéma Acteur / Flux</a>
-      </div>
-      <div class="note-card">
-        <a href="Présentation_Odoo.pdf" target="_blank">📊 Présentation Odoo</a>
-      </div>
-    </section>
-  </main>
+.section-description-detail {
+    text-align: center;
+    max-width: 900px;
+    margin: 5px auto 30px auto;
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+}
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 - Portfolio de Zidelmalt Tassadit</p>
-  </footer>
-</body>
-</html>
+/* Titres de sous-catégories (H3) */
+.document-category h3 {
+    text-align: left;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    padding-left: 0;
+    margin-top: 40px;
+    border-bottom: 2px solid var(--primary-color); /* Ligne rose plus marquée */
+}
+
+/* Grille de documents */
+.document-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+/* Carte de document individuelle */
+.doc-card {
+    background: var(--background-content);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--accent-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doc-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.doc-card h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.doc-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.doc-link {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.doc-link:hover {
+    background: #C2185B; /* Rose foncé */
+}
+
+/* Adaptation Mobile pour la grille de documents */
+@media (max-width: 768px) {
+    .document-grid {
+        grid-template-columns: 1fr;
+    }
+}
