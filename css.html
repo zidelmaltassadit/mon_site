@@ -1,29 +1,124 @@
-/* ---------------------------------- */
-/* PIED DE PAGE (FOOTER) */
-/* ---------------------------------- */
-
-.main-footer {
-    position: absolute; /* Positionné en bas de la page (ou du viewport) */
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    background-color: transparent; /* Fond transparent pour garder le style sombre */
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7); /* Texte gris clair */
-    z-index: 50; /* Pour s'assurer qu'il est visible */
+/* --- STYLE DU HEADER (En-tête de toutes les pages) --- */
+header {
+    background-color: var(--secondary-color); /* Fond Anthracite */
+    color: var(--background-white);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.github-link {
-    color: var(--color-primary); /* Texte du lien en blanc */
-    font-weight: 600;
+header h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color); /* Titre du portfolio en Rose */
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li a {
+    color: var(--background-white);
     text-decoration: none;
-    padding-bottom: 2px;
-    border-bottom: 2px solid var(--color-primary); /* Soulignement distinctif */
-    transition: color 0.3s, border-bottom 0.3s;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 4px;
 }
 
-.github-link:hover {
-    color: var(--color-primary);
-    border-bottom: 2px solid #2196F3; /* Changement de couleur au survol (Bleu moderne) */
+nav ul li a:hover {
+    color: var(--primary-color); /* Texte en rose au survol */
+    background-color: #4c5a69; /* Gris légèrement plus clair */
+}
+
+
+/* --- STYLE DES SECTIONS GÉNÉRALES (Mix Rose/Blanc/Noir) --- */
+
+main {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+/* Style général des titres H2/H3 */
+h2 {
+    color: var(--secondary-color); /* Titres en Noir/Anthracite */
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--primary-color); /* Détail en Rose */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: var(--primary-color); /* Sous-titres en Rose */
+    font-size: 1.6rem;
+    margin-top: 30px;
+}
+
+/* Style des boutons (déjà défini, mais vérifiez qu'ils utilisent les variables) */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--background-white);
+    /* ... autres styles de boutons ... */
+}
+
+
+/* --- STYLE DES GRILLES DE DOCUMENTS ET CARTES (Rubriques, Certifications, Notes...) --- */
+
+.document-category {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.document-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.rubrique-card, .doc-card, .note-card {
+    background-color: var(--background-white);
+    border: 1px solid var(--accent-light); /* Bordure Rose très clair */
+    border-top: 5px solid var(--primary-color); /* Bande Rose en haut */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.rubrique-card:hover, .doc-card:hover, .note-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.rubrique-card h4, .doc-card h4, .note-card h4 {
+    color: var(--secondary-color); /* Titre de la carte en Noir/Anthracite */
+    margin-top: 0;
+}
+
+.doc-link, .note-card a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.doc-link:hover, .note-card a:hover {
+    text-decoration: underline;
+}
+
+/* --- STYLE SPÉCIFIQUE À LA PAGE D'ACCUEIL (AVEC IMAGE) --- */
+
+/* La section d'accueil avec l'image NE DOIT PAS avoir de fond blanc pour que l'image Theme_rose.avif soit visible */
+.hero-with-bg {
+    /* (Styles définis précédemment : background-image, background-size, etc.) */
+    background-color: var(--accent-light); /* Couleur de secours si l'image ne charge pas */
 }
