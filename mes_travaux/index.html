@@ -1,100 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🌸 Mes Travaux - Zidelmalt Tassadit</title>
-  <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸 Rubrique 1 : Mes Travaux - ZIDELMAL Tassadit</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <h1>🌸 Mes Travaux</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="../notes/index.html">Notes</a></li>
-        <li><a href="../certifications/index.html">Certifications</a></li>
-        <li><a href="../Si_documents/index.html">SI Documents</a></li>
-        <li><a href="../diaporama/index.html">Diaporama</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">
+            <h1>Rubrique 1 : Mes Travaux</h1>
+            <p>Productions Académiques et Exercices Pratiques</p>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil Général</a></li> 
+                <li><a href="../notes/index.html">R2 Notes</a></li>
+                <li><a href="../Si_documents/index.html">R3 Doc SI</a></li>
+                <li><a href="../certifications/index.html">R4 Certifications</a></li>
+                <li><a href="../diaporama/index.html">R6 Diaporama</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+    </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h2>Travaux Réalisés</h2>
-    <p>Voici mes travaux et exercices pratiques réalisés durant le semestre :</p>
-  </section>
+    <main>
+        <section id="introduction-travaux">
+            <h2>🏆 Tous les Travaux et Dossiers du Semestre</h2>
+            <p class="section-description">
+                Cette rubrique centralise l'ensemble de mes **productions académiques**, des **Travaux Pratiques (TP)** aux **exercices de modélisation**. Chaque document prouve l'application des concepts théoriques étudiés.
+            </p>
+            <p class="section-description-detail">
+                *Critère visé : Gérer et organiser ses productions académiques (dossiers complets et correctement nommés).*
+            </p>
+        </section>
 
-  <!-- TRAVAUX LIST -->
-  <main>
-    <section class="notes-container">
-      <div class="note-card">
-        <a href="Processus_Organisationnel.pdf" target="_blank">📄 Processus Organisationnel</a>
-      </div>
-      <div class="note-card">
-        <a href="PGI_Exercice.xls" download>📥 PGI Exercice</a>
-      </div>
-      <div class="note-card">
-        <a href="TP_Odoo.pdf" target="_blank">📄 TP Odoo</a>
-      </div>
-      <div class="note-card">
-        <a href="Processus_de_gestion_et_modélisation.pdf" target="_blank">📄 Processus de gestion et modélisation</a>
-      </div>
-      <div class="note-card">
-        <a href="Training_schéma_acteur_flux.pdf" target="_blank">📄 Training — Schéma acteur flux</a>
-      </div>
-      <div class="note-card">
-        <a href="TD_MCD.pdf" target="_blank">📄 TD MCD</a>
-      </div>
-      <div class="note-card">
-        <a href="diagramme_flux.jpg" target="_blank">🖼️ Diagramme de flux 1</a>
-      </div>
-      <div class="note-card">
-        <a href="diagramme_flux_1.jpg" target="_blank">🖼️ Diagramme de flux 2</a>
-      </div>
-    </section>
+        <section id="processus-gestion" class="document-category">
+            <h3>📈 Analyse des Processus et PGI</h3>
+            <div class="document-grid">
+                
+                <article class="doc-card">
+                    <h4>📄 Processus Organisationnel</h4>
+                    <p>Étude des étapes et des rôles dans un processus d'entreprise donné.</p>
+                    <a href="Processus_Organisationnel.pdf" target="_blank" class="doc-link">Consulter (PDF)</a>
+                </article>
+                
+                <article class="doc-card">
+                    <h4>📥 PGI Exercice - Application Excel</h4>
+                    <p>Exercice d'application des fonctionnalités d'un Progiciel de Gestion Intégré (PGI) sous Excel.</p>
+                    <a href="PGI_Exercice.xls" download class="doc-link">Télécharger (XLS)</a>
+                </article>
+                
+                <article class="doc-card">
+                    <h4>📄 TP Odoo (ERP)</h4>
+                    <p>Travail Pratique sur l'utilisation du logiciel Odoo pour la gestion d'une activité.</p>
+                    <a href="TP_Odoo.pdf" target="_blank" class="doc-link">Consulter (PDF)</a>
+                </article>
+                
+                <article class="doc-card">
+                    <h4>📄 Processus de gestion et modélisation</h4>
+                    <p>Document liant les processus théoriques de gestion à la nécessité de leur modélisation.</p>
+                    <a href="Processus_de_gestion_et_modélisation.pdf" target="_blank" class="doc-link">Consulter (PDF)</a>
+                </article>
+                
+            </div>
+        </section>
 
-    <h3>🧩 Diagrammes réalisés selon les exercices</h3>
-    <section class="notes-container">
-      <div class="note-card">
-        <a href="Diagramme_cas_QUILOU.pdf" target="_blank">📄 Diagramme cas QUILOU</a>
-      </div>
-      <div class="note-card">
-        <a href="Diagramme_gestion_projet.pdf" target="_blank">📄 Diagramme gestion projet</a>
-      </div>
-    </section>
+        <section id="modelisation-flux" class="document-category">
+            <h3>🧩 Modélisation (MCD, UML) et Schémas de Flux</h3>
+            <div class="document-grid">
+                
+                <article class="doc-card">
+                    <h4>📄 TD Modélisation Conceptuelle de Données (MCD)</h4>
+                    <p>Énoncé du TD préparatoire aux travaux de conception de base de données.</p>
+                    <a href="TD_MCD.pdf" target="_blank" class="doc-link">Consulter (PDF)</a>
+                </article>
+                
+                <article class="doc-card">
+                    <h4>📄 Training — Schéma acteur flux</h4>
+                    <p>Exercice d'entraînement sur la création de diagrammes de flux entre les différents acteurs d'un SI.</p>
+                    <a href="Training_schéma_acteur_flux.pdf" target="_blank" class="doc-link">Consulter (PDF)</a>
+                </article>
 
-    <h3>📘 Résolution du TD MCD</h3>
-    <p>Voici la résolution complète des exercices du TD MCD, accompagnée des deux diagrammes réalisés pour illustrer la modélisation :</p>
-    <section class="notes-container">
-      <div class="note-card">
-        <a href="Diagramme_exercice1.png" target="_blank">🖼️ Diagramme Exercice 1</a>
-      </div>
-      <div class="note-card">
-        <a href="Diagramme_exercice2.png" target="_blank">🖼️ Diagramme Exercice 2</a>
-      </div>
-    </section>
+                <article class="doc-card">
+                    <h4>🖼️ Diagramme de Flux 1 & 2</h4>
+                    <p>Deux schémas illustrant des processus ou des échanges d'informations spécifiques.</p>
+                    <a href="diagramme_flux.jpg" target="_blank" class="doc-link">Flux 1 (JPG)</a> | 
+                    <a href="diagramme_flux_1.jpg" target="_blank" class="doc-link">Flux 2 (JPG)</a>
+                </article>
+                
+                <article class="doc-card">
+                    <h4>📄 Diagramme de Cas d'Utilisation QUILOU</h4>
+                    <p>Modélisation UML des cas d'utilisation pour l'étude de cas QUILOU.</p>
+                    <a href="Diagramme_cas_QUILOU.pdf" target="_blank" class="doc-link">Consulter (PDF)</a>
+                </article>
 
-    <h3>📊 TP Gantt</h3>
-    <p>Voici le diagramme de Gantt réalisé pour l'organisation du projet, disponible en format ODT, PNG et PDF :</p>
-    <section class="notes-container">
-      <div class="note-card">
-        <a href="Tp_gantt.odt" download>📥 TP Gantt (ODT)</a>
-      </div>
-      <div class="note-card">
-        <a href="Online_Gantt.png" target="_blank">🖼️ Diagramme Gantt – Image</a>
-      </div>
-      <div class="note-card">
-        <a href="Online_Gantt.pdf" target="_blank">📄 Diagramme Gantt – PDF</a>
-      </div>
-    </section>
-  </main>
+            </div>
+        </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 - Portfolio de Zidelmalt Tassadit</p>
-  </footer>
+        <section id="gestion-projet" class="document-category">
+            <h3>🗓️ Outils de Planification et Gestion de Projet</h3>
+            <div class="document-grid">
+                
+                <article class="doc-card">
+                    <h4>📄 Diagramme de Gestion de Projet</h4>
+                    <p>Représentation visuelle des étapes clés, tâches et dépendances d'un projet.</p>
+                    <a href="Diagramme_gestion_projet.pdf" target="_blank" class="doc-link">Consulter (PDF)</a>
+                </article>
+
+                <article class="doc-card">
+                    <h4>🖼️ Diagramme Exercice 1 & 2 (MCD)</h4>
+                    <p>Résolution graphique du TD MCD pour les exercices 1 et 2.</p>
+                    <a href="Diagramme_exercice1.png" target="_blank" class="doc-link">Ex. 1 (PNG)</a> |
+                    <a href="Diagramme_exercice2.png" target="_blank" class="doc-link">Ex. 2 (PNG)</a>
+                </article>
+                
+                <article class="doc-card">
+                    <h4>📥 TP Gantt - Fichier source</h4>
+                    <p>Fichier ODT contenant le tableau de planification du projet.</p>
+                    <a href="Tp_gantt.odt" download class="doc-link">Télécharger (ODT)</a>
+                </article>
+                
+                <article class="doc-card">
+                    <h4>📄 Diagramme de Gantt - Final</h4>
+                    <p>Rendu final du planning de projet.</p>
+                    <a href="Online_Gantt.png" target="_blank" class="doc-link">Image (PNG)</a> |
+                    <a href="Online_Gantt.pdf" target="_blank" class="doc-link">PDF</a>
+                </article>
+                
+            </div>
+        </section>
+        
+    </main>
+
+    <footer id="contact">
+        <p>© 2025 - Portfolio de ZIDELMAL Tassadit | <a href="../index.html#contact" class="footer-link">Contact</a></p>
+    </footer>
 </body>
 </html>
