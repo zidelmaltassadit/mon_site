@@ -1,62 +1,59 @@
-/* 🌸 Thème féminin - Rose pastel, blanc et touches de noir */
+/* 🌸 Thème commun à toutes les pages - Rose, Blanc et Traits Noirs Structurants */
 
-/* === POLICES + COULEURS REVISITÉES === */
+/* === POLICES + COULEURS HARMONISÉES === */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-  /* COULEURS BASE (Optimisation) */
-  --blanc: #ffffff;
-  --noir-structure: #1b1b1b;     /* Texte principal et Traits Noirs structurants */
-  --gris-texte: #444444;         /* Texte secondaire (plus doux que le noir) */
+  /* COULEURS BASE */
+  --blanc: #ffffff;             
+  --noir-structure: #1b1b1b;     /* Texte principal, Traits Noirs */
+  --gris-texte: #444444;         /* Texte secondaire et descriptions */
   
   /* COULEURS ROSE (Féminin & Accent) */
-  --rose-fond: #FFFAFC;          /* Rose TRES pâle (presque blanc) pour un fond aéré */
-  --rose-poudre: #FCE4EC;        /* Rose très clair pour les fonds de section */
-  --rose-accent: #C2185B;        /* Un rose plus soutenu (similaire au magenta) pour les accents pros */
-  
+  --rose-fond: #FFFAFC;          /* Rose TRES pâle pour le fond de page */
+  --rose-accent: #C2185B;        /* Rose soutenu pour les accents et titres clés */
+  --rose-poudre: #FCE4EC;        /* Rose clair pour les arrière-plans des sections/cartes importantes */
+
   /* EFFETS */
   --card-bg: var(--blanc);
-  --hover-bg: rgba(194, 24, 91, 0.1); /* Effet hover léger basé sur --rose-accent */
-  --ombre: rgba(0,0,0,0.1);       /* Ombre légère pour l'aspect "flottant" */
+  --hover-bg-shadow: rgba(194, 24, 91, 0.4); 
+  --ombre: rgba(0,0,0,0.1);      
 }
 
-/* === RESET === */
+/* === RESET & BODY === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* === BODY === */
 body {
   font-family: 'Poppins', sans-serif;
-  /* Utilisation du Rose TRES pâle pour la clarté */
-  background: var(--rose-fond);
+  background: var(--rose-fond); 
   color: var(--noir-structure);
   line-height: 1.7;
 }
 
-/* === HEADER === */
+/* === HEADER (Traits Noirs Structurants) === */
 header {
   text-align: center;
   padding: 80px 20px 50px;
   background: var(--blanc);
   color: var(--noir-structure);
-  /* Trait Noir fin et structurant */
-  border-bottom: 1px solid var(--noir-structure);
-  box-shadow: 0 4px 15px var(--ombre);
+  /* Trait Noir Fin en bas */
+  border-bottom: 1px solid var(--noir-structure); 
+  box-shadow: 0 2px 10px var(--ombre);
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3.2rem;
-  /* Titre principal en Noir pour le professionnalisme */
-  color: var(--noir-structure);
+  color: var(--noir-structure); 
 }
 
 header .subtitle {
   font-size: 1.15rem;
-  color: var(--rose-accent); /* Sous-titre en Rose Accent pour l'importance */
+  color: var(--rose-accent); 
   margin-top: 5px;
   font-weight: 600;
 }
@@ -67,7 +64,7 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px; /* Légèrement réduit pour un aspect plus serré */
+  gap: 15px;
   margin-top: 30px;
 }
 
@@ -75,8 +72,7 @@ nav ul li a {
   color: var(--rose-accent);
   text-decoration: none;
   padding: 10px 20px;
-  /* Utilisation du Rose Accent pour les boutons */
-  border: 1px solid var(--rose-accent); 
+  border: 1px solid var(--rose-accent);
   border-radius: 40px;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -85,13 +81,13 @@ nav ul li a {
 nav ul li a:hover {
   background: var(--rose-accent);
   color: var(--blanc);
-  box-shadow: 0 4px 12px rgba(194, 24, 91, 0.4);
+  box-shadow: 0 4px 12px var(--hover-bg-shadow);
 }
 
-/* Nouveau style pour les liens de faible priorité (ex: Notes, Ressources) */
+/* Styles pour les liens de NAVIGATION Spécifiques */
 nav ul li .link-secondary {
   color: var(--gris-texte);
-  border: 1px dashed var(--gris-texte);
+  border: 1px dashed var(--gris-texte); 
   opacity: 0.8;
 }
 
@@ -101,25 +97,35 @@ nav ul li .link-secondary:hover {
   border: 1px solid var(--gris-texte);
 }
 
+nav ul li .link-featured {
+  background: var(--rose-accent);
+  color: var(--blanc);
+}
+nav ul li .link-featured:hover {
+  background: var(--noir-structure);
+  border-color: var(--noir-structure);
+}
 
-/* === MAIN CONTENT / HERO === */
+/* === MAIN CONTENT / TITRES DE SECTION === */
 main {
   max-width: 1150px;
   margin: 50px auto;
   padding: 0 20px 80px;
 }
 
-.hero {
-  text-align: center;
-  padding: 40px 20px 60px;
-}
-
-.hero h2 {
+/* H2 commun pour toutes les pages (utilisé dans Hero et Projet) */
+h2 {
   text-align: center;
   margin-bottom: 25px;
   font-family: 'Playfair Display', serif;
-  color: var(--noir-structure); /* Titre de section en Noir pour le contraste */
+  color: var(--noir-structure);
   font-size: 2.5rem;
+}
+
+/* === STYLES PAGE D'ACCUEIL (HOME) === */
+.hero {
+  text-align: center;
+  padding: 40px 20px 60px;
 }
 
 .hero-intro {
@@ -129,18 +135,16 @@ main {
   color: var(--gris-texte);
 }
 
-/* Style de la photo de profil (à adapter si vous mettez une image) */
 .profile-photo {
   width: 100px;
   height: 100px;
   margin: 20px auto 30px;
   border-radius: 50%;
   border: 3px solid var(--rose-accent);
-  background-color: var(--rose-poudre); /* Un fond provisoire si l'image n'est pas là */
+  background-color: var(--rose-poudre); 
   box-shadow: 0 4px 10px var(--ombre);
 }
 
-/* Style du bouton d'appel à l'action */
 .btn-primary {
   display: inline-block;
   padding: 12px 30px;
@@ -154,42 +158,35 @@ main {
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(194, 24, 91, 0.5);
+  box-shadow: 0 8px 15px var(--hover-bg-shadow);
 }
 
-
-/* === GRID / CARDS === */
+/* === GRID / CARDS (Fiches Académiques Structurées) === */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 25px; /* Légèrement réduit pour un aspect plus compact */
+  gap: 25px;
 }
 
-/* === CARDS === */
 .card {
   background: var(--card-bg);
-  border-radius: 10px; /* Coins plus doux */
+  border-radius: 10px;
   padding: 30px 20px;
   text-align: center;
   color: var(--noir-structure);
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  /* Le trait noir (bordure) pour structurer le scolaire */
+  /* Trait Noir comme bordure principale pour l'aspect fiche/document */
   border: 1px solid var(--noir-structure); 
   box-shadow: 0 5px 15px var(--ombre);
   transition: all 0.4s ease;
 }
 
-/* Suppression du pseudo-élément ::before pour un design plus clair et professionnel */
-.card::before {
-  content: none; 
-}
-
 .card:hover {
-  transform: translateY(-5px); /* Moins exagéré que -10px */
+  transform: translateY(-5px); 
   box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-  border-color: var(--rose-accent); /* Le trait noir devient rose au survol */
+  border-color: var(--rose-accent); /* Changement de couleur au survol */
 }
 
 .card h3 {
@@ -206,25 +203,17 @@ main {
   transition: color 0.3s;
 }
 
-.card:hover h3 {
-  color: var(--rose-accent);
-}
-
-.card:hover p {
-  color: var(--noir-structure);
-}
-
-/* Style spécial pour la carte 'Projet Final' (card-featured) */
+/* Style pour la carte 'Projet Final' (card-featured) */
 .card-featured {
   background: var(--rose-poudre); 
-  border: 2px solid var(--rose-accent);
+  border: 2px solid var(--rose-accent); 
   box-shadow: 0 8px 20px rgba(194, 24, 91, 0.3);
 }
 
-/* Style pour les cartes de faible priorité (Notes, Diaporama, Ressources) */
+/* Cartes de faible priorité (Notes, Diaporama, Ressources) */
 .card.link-low-priority {
   opacity: 0.7;
-  border: 1px dashed var(--gris-texte);
+  border: 1px dashed var(--gris-texte); 
   background: #f9f9f9;
   box-shadow: none;
 }
@@ -235,6 +224,148 @@ main {
   border: 1px solid var(--rose-accent);
 }
 
+
+/* === STYLES SPÉCIFIQUES À LA PAGE PROJET (ex: projet-final/index.html) === */
+
+.project-detail {
+  max-width: 1000px;
+}
+
+.section-container {
+  background: var(--blanc);
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  /* Traits noirs autour de la section */
+  border: 1px solid var(--noir-structure); 
+  box-shadow: 0 4px 15px var(--ombre);
+}
+
+.section-container h2 {
+  color: var(--rose-accent);
+  text-align: left;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  /* Soulignement rose accentué */
+  border-bottom: 2px solid var(--rose-poudre); 
+  font-size: 2rem;
+}
+
+.section-description {
+  font-style: italic;
+  color: var(--gris-texte);
+  margin-bottom: 25px;
+}
+
+/* Introduction Grid (Rôle et Challenge) */
+.project-intro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.box-info {
+  background: var(--rose-poudre); 
+  padding: 20px;
+  border-left: 5px solid var(--rose-accent);
+  border-radius: 8px;
+}
+
+.box-info h3 {
+  color: var(--noir-structure);
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.summary-text {
+  font-size: 1.05rem;
+  color: var(--noir-structure);
+  padding-top: 15px;
+  border-top: 1px dashed var(--gris-texte); 
+}
+
+/* Modélisation et Analyse */
+.modeling-gallery {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Pour le responsive */
+}
+
+.modeling-item {
+  flex-basis: 45%;
+  min-width: 250px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid var(--gris-texte); 
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.modeling-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--rose-accent);
+  box-shadow: 0 5px 10px var(--ombre);
+}
+
+.modeling-item h3 {
+  color: var(--rose-accent);
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Bouton secondaire (pour les documents sur la page projet) */
+.btn-secondary {
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: var(--noir-structure);
+  color: var(--blanc);
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+  background: var(--rose-accent);
+}
+
+/* Livrables (Liste de fichiers) */
+.project-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-list li {
+  background: var(--rose-fond);
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 4px solid var(--rose-accent);
+  box-shadow: 0 2px 5px var(--ombre);
+  transition: background 0.3s;
+}
+
+.project-list li:hover {
+  background: var(--rose-poudre);
+}
+
+.project-list li a {
+  font-weight: 600;
+  color: var(--noir-structure);
+  text-decoration: none;
+}
+
+.file-type {
+  font-size: 0.85rem;
+  color: var(--rose-accent);
+  float: right;
+  font-weight: normal;
+}
+
+
 /* === FOOTER === */
 footer {
   background: var(--blanc);
@@ -242,8 +373,8 @@ footer {
   text-align: center;
   padding: 35px 15px;
   font-size: 0.95rem;
-  /* Trait noir fin en haut */
-  border-top: 1px solid var(--noir-structure); 
+  /* Trait Noir Fin en haut */
+  border-top: 1px solid var(--noir-structure);
   letter-spacing: 0.3px;
 }
 
@@ -265,7 +396,16 @@ footer {
   .hero h2 {
     font-size: 1.8rem;
   }
-
+  
+  /* Ajustement pour la page projet */
+  .section-container {
+    padding: 25px 15px;
+  }
+  .modeling-item {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  
   .card h3 {
     font-size: 1.4rem;
   }
