@@ -1,0 +1,29 @@
+/* ---------------------------------- */
+/* PIED DE PAGE (FOOTER) */
+/* ---------------------------------- */
+
+.main-footer {
+    position: absolute; /* Positionné en bas de la page (ou du viewport) */
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent; /* Fond transparent pour garder le style sombre */
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7); /* Texte gris clair */
+    z-index: 50; /* Pour s'assurer qu'il est visible */
+}
+
+.github-link {
+    color: var(--color-primary); /* Texte du lien en blanc */
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--color-primary); /* Soulignement distinctif */
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.github-link:hover {
+    color: var(--color-primary);
+    border-bottom: 2px solid #2196F3; /* Changement de couleur au survol (Bleu moderne) */
+}
