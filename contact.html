@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-moi - ZIDELMAL Tassadit</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ZIDELMAL Tassadit</h1> 
+        </div>
+        
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À Propos de moi</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+    </header>
+
+    <main>
+        <section class="document-category" style="padding-top: 100px; text-align: center;">
+            <h2>Me Contacter</h2>
+
+            <div style="max-width: 600px; margin: 40px auto; padding: 30px; border: 2px solid var(--accent-light); border-radius: 10px;">
+                <h3>📧 Adresse E-mail Institutionnelle</h3>
+                <p style="font-size: 1.5rem; font-weight: bold; color: var(--secondary-color); margin-bottom: 20px;">
+                    44016617@parisnanterre.com
+                </p>
+                <p>
+                    Veuillez utiliser cette adresse pour toute demande professionnelle, académique ou concernant ce portfolio.
+                </p>
+                <a href="mailto:44016617@parisnanterre.com?subject=Contact%20Portfolio%20SI" class="btn-primary" style="margin-top: 20px;">
+                    Envoyer un E-mail
+                </a>
+            </div>
+            
+            <a href="index.html" class="doc-link" style="margin-top: 40px;">← Retour à l'Accueil</a>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Portfolio de ZIDELMAL Tassadit | 
+           <a href="contact.html" class="footer-link">Contact</a>
+        </p>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        if(navToggle) {
+            navToggle.addEventListener('click', () => {
+                const visibility = navToggle.getAttribute('aria-expanded');
+                if (visibility === 'false') {
+                    navToggle.setAttribute('aria-expanded', 'true');
+                    mainNav.classList.add('visible');
+                } else {
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    mainNav.classList.remove('visible');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
