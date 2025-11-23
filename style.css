@@ -3,12 +3,12 @@
 /* ================================================= */
 
 :root {
-    /* Couleurs du Thème (Rose, Anthracite, Blanc) */
+    /* Couleurs du Thème (Rose, Anthracite -> Noir, Blanc) */
     --primary-color: #e91e63;   /* Rose (pour les accents, titres H3, boutons) */
-    --secondary-color: #2c3e50; /* NOUVEAU GRIS FONCÉ (Anthracite très foncé) */
+    --secondary-color: #000000; /* NOIR PUR pour le fond du header et titres H1/H2 */
     --accent-light: #fce4ec;   /* Rose très clair (pour les fonds légers/bordures) */
     --background-white: #ffffff; /* Blanc pur (pour le fond principal) */
-    --text-color: #34495e;      /* NOUVEAU GRIS FONCÉ pour le texte des paragraphes */
+    --text-color: #111111;      /* Noir très foncé pour la lisibilité du texte (meilleur que le gris) */
 }
 
 /* Réinitialisation de base */
@@ -63,14 +63,21 @@ header {
     color: var(--background-white);
     padding: 15px 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; 
     align-items: center;
+    gap: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     position: sticky; /* Reste en haut lors du défilement */
     top: 0;
     z-index: 1000;
 }
-
+.header-info-right {
+    font-size: 1rem;
+    color: var(--primary-color); /* On utilise le Rose pour le faire ressortir */
+    font-weight: 600;
+    margin-left: auto; /* Pousse ce bloc (et la navigation qui suit) vers la droite */
+    padding-left: 20px;
+}
 header h1 {
     font-size: 1.8rem; /* Nom plus grand */
     color: var(--primary-color); /* Rose pour le nom */
@@ -318,11 +325,11 @@ footer {
 /* ================================================= */
 
 @media (max-width: 992px) {
-    
-    /* Navigation mobile */
-    .nav-toggle {
-        display: block;
+    /* ... autres styles de responsivité ... */
+    .desktop-only {
+        display: none !important;
     }
+}
 
     nav {
         position: absolute;
