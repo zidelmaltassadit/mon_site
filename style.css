@@ -6,25 +6,27 @@
 }
 
 /* --- NOUVELLE PALETTE DE COULEURS ---
-   --primary-color: #B80F4A;  (Rose Foncée / Bordeaux Rosé)
-   --secondary-color: #2c3e50; (Gris Anthracite / Noir doux)
-   --background-light: #FFFFFF; (Blanc Pur)
-   --accent-light: #F0B7CD;    (Rose Pâle pour le survol)
+   --primary-color: #E91E63;  (Rose Vif / Fushia)
+   --secondary-color: #2c3e50; (Gris Anthracite / Texte)
+   --background-body: #FCE4EC; (ROSE TRÈS PÂLE pour le fond de la page)
+   --background-content: #FFFFFF; (BLANC PUR pour les sections et les cartes)
+   --accent-light: #FF80AB;    (Rose plus doux pour le survol)
 */
 body {
-    font-family: 'Montserrat', sans-serif; /* Police moderne et claire (si disponible) */
+    font-family: 'Montserrat', sans-serif; 
     line-height: 1.6;
     color: var(--secondary-color);
-    background-color: var(--background-light);
-    --primary-color: #B80F4A; 
+    background-color: var(--background-body); /* NOUVEAU FOND ROSE PÂLE */
+    --primary-color: #E91E63; 
     --secondary-color: #2c3e50; 
-    --background-light: #FFFFFF;
-    --accent-light: #F0B7CD;
+    --background-body: #FCE4EC; 
+    --background-content: #FFFFFF;
+    --accent-light: #FF80AB;
 }
 
 /* 2. EN-TÊTE ET NAVIGATION (HEADER) */
 header {
-    background: var(--background-light); 
+    background: var(--background-content); /* Gardé en blanc pour contraster avec le fond de page */
     color: var(--secondary-color);
     padding: 1rem 5%;
     display: flex;
@@ -33,7 +35,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Ombre très légère */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
 }
 
 header h1 {
@@ -42,7 +44,7 @@ header h1 {
     font-weight: 700;
 }
 
-header p { /* Pour le "Portfolio SI - Parcours MIAGE S5" */
+header p { 
     font-size: 0.8rem;
     color: #888;
 }
@@ -58,12 +60,12 @@ nav ul li a {
     padding: 0.7rem 1.2rem;
     display: block;
     transition: background 0.3s ease, color 0.3s ease;
-    border-radius: 50px; /* Bords très arrondis pour les boutons */
+    border-radius: 50px; 
 }
 
 nav ul li a:hover {
     background: var(--accent-light); 
-    color: var(--primary-color); 
+    color: var(--background-content); /* Texte des liens en blanc au survol */
 }
 
 /* 3. STRUCTURE DES SECTIONS PRINCIPALES */
@@ -73,10 +75,10 @@ main {
 
 section {
     padding: 40px 5%;
-    background: var(--background-light);
+    background: var(--background-content); /* Sections en BLANC PUR */
     margin-bottom: 25px;
     border-radius: 12px; 
-    box-shadow: 0 0 18px rgba(0, 0, 0, 0.08); /* Ombre légèrement plus marquée */
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.08); 
 }
 
 h2 {
@@ -91,7 +93,7 @@ h2 {
 h3 {
     color: var(--secondary-color);
     margin-bottom: 1rem;
-    border-bottom: 1px solid var(--accent-light); /* Ligne de séparation sous-titre */
+    border-bottom: 1px solid var(--accent-light); 
     padding-bottom: 5px;
 }
 
@@ -132,7 +134,7 @@ h3 {
 }
 
 .btn-primary:hover {
-    background: #FF4081; /* Un rose légèrement plus vif au survol */
+    background: #C2185B; /* Rose légèrement plus foncé au survol */
     transform: translateY(-2px);
 }
 
@@ -150,20 +152,20 @@ h3 {
 }
 
 .card {
-    background: var(--background-light);
+    background: var(--background-content); /* Cartes en BLANC PUR */
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
     text-decoration: none;
     color: var(--secondary-color);
-    border: 1px solid var(--accent-light); /* Contour rose pâle */
+    border: 1px solid var(--accent-light); 
     transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    border-color: var(--primary-color); /* Contour devient rose foncé au survol */
+    border-color: var(--primary-color); 
 }
 
 .card h3 {
@@ -174,7 +176,7 @@ h3 {
 
 /* 7. PIED DE PAGE (FOOTER/CONTACT) */
 footer {
-    background: var(--secondary-color); /* Fond gris anthracite */
+    background: var(--secondary-color); 
     color: white;
     text-align: center;
     padding: 30px 5%;
@@ -209,8 +211,6 @@ footer a:hover {
 
 
 /* 8. ADAPTATION MOBILE (RESPONSIVITÉ) */
-/* Les styles pour le menu hamburger et l'empilement mobile restent les mêmes que précédemment 
-   pour assurer la fonctionnalité sur smartphone. */
 @media (max-width: 768px) {
     
     header {
@@ -230,7 +230,6 @@ footer a:hover {
         right: 5%;
     }
 
-    /* Le reste du code mobile (masquage/affichage de la nav, grid en 1 colonne) est conservé */
     #main-nav {
         width: 100%;
         max-height: 0;
