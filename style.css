@@ -49,9 +49,16 @@ header {
 }
 
 header h1 {
-    font-size: 1.5rem;
-    color: var(--primary-color); 
+    font-size: 1.8rem; /* Nom plus grand */
+    color: var(--primary-color); /* Rose pour le nom */
     margin: 0;
+}
+
+/* NOUVEAU STYLE POUR LE SOUS-TITRE */
+.logo p {
+    font-size: 0.9rem; /* Taille plus petite */
+    color: #b0bec5; /* Couleur claire (Gris très pâle) pour le contraste sur le fond sombre */
+    margin-top: 2px;
 }
 
 nav ul {
