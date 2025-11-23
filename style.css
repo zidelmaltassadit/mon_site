@@ -1,30 +1,30 @@
-/* 1. RÉINITIALISATION BASIQUE */
+/* 1. RÉINITIALISATION BASIQUE ET DÉFINITION DE LA PALETTE */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Palette de couleurs :
-   --primary-color: #E91E63;  (Rose soutenu, élégant)
-   --secondary-color: #333333; (Noir/Gris foncé pour la lisibilité)
-   --background-light: #F9F9F9; (Blanc cassé)
-   --accent-light: #FFC0CB;    (Rose pâle pour le survol)
+/* --- NOUVELLE PALETTE DE COULEURS ---
+   --primary-color: #B80F4A;  (Rose Foncée / Bordeaux Rosé)
+   --secondary-color: #2c3e50; (Gris Anthracite / Noir doux)
+   --background-light: #FFFFFF; (Blanc Pur)
+   --accent-light: #F0B7CD;    (Rose Pâle pour le survol)
 */
 body {
-    font-family: 'Georgia', serif; /* Police plus élégante */
+    font-family: 'Montserrat', sans-serif; /* Police moderne et claire (si disponible) */
     line-height: 1.6;
     color: var(--secondary-color);
     background-color: var(--background-light);
-    --primary-color: #E91E63; 
-    --secondary-color: #333333; 
-    --background-light: #F9F9F9;
-    --accent-light: #FFC0CB;
+    --primary-color: #B80F4A; 
+    --secondary-color: #2c3e50; 
+    --background-light: #FFFFFF;
+    --accent-light: #F0B7CD;
 }
 
 /* 2. EN-TÊTE ET NAVIGATION (HEADER) */
 header {
-    background: white; /* Fond blanc */
+    background: var(--background-light); 
     color: var(--secondary-color);
     padding: 1rem 5%;
     display: flex;
@@ -33,12 +33,18 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre discrète noire */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Ombre très légère */
 }
 
 header h1 {
-    font-size: 1.8rem;
-    color: var(--primary-color); /* Nom en rose */
+    font-size: 1.6rem;
+    color: var(--primary-color); 
+    font-weight: 700;
+}
+
+header p { /* Pour le "Portfolio SI - Parcours MIAGE S5" */
+    font-size: 0.8rem;
+    color: #888;
 }
 
 nav ul {
@@ -47,17 +53,17 @@ nav ul {
 }
 
 nav ul li a {
-    color: var(--secondary-color); /* Texte des liens en noir */
+    color: var(--secondary-color); 
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.2rem;
     display: block;
     transition: background 0.3s ease, color 0.3s ease;
-    border-radius: 5px;
+    border-radius: 50px; /* Bords très arrondis pour les boutons */
 }
 
 nav ul li a:hover {
-    background: var(--accent-light); /* Fond rose pâle au survol */
-    color: var(--primary-color); /* Texte qui passe au rose soutenu */
+    background: var(--accent-light); 
+    color: var(--primary-color); 
 }
 
 /* 3. STRUCTURE DES SECTIONS PRINCIPALES */
@@ -66,67 +72,68 @@ main {
 }
 
 section {
-    padding: 40px 0;
-    background: white;
-    margin-bottom: 20px;
-    border-radius: 10px; /* Coins arrondis pour la douceur */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* Ombre très légère */
+    padding: 40px 5%;
+    background: var(--background-light);
+    margin-bottom: 25px;
+    border-radius: 12px; 
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.08); /* Ombre légèrement plus marquée */
 }
 
 h2 {
     color: var(--primary-color);
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 2rem;
-    border-bottom: 2px solid var(--accent-light); /* Ligne rose pâle sous le titre */
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 h3 {
     color: var(--secondary-color);
     margin-bottom: 1rem;
+    border-bottom: 1px solid var(--accent-light); /* Ligne de séparation sous-titre */
+    padding-bottom: 5px;
 }
 
 /* 4. SECTION ACCUEIL (HERO) */
 .hero-section {
     text-align: center;
     padding: 80px 5%;
-    /* Pas de bordure en bas pour la section Hero */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 }
 
 .hero-section h2 {
     font-size: 3rem;
     color: var(--secondary-color);
-    border-bottom: none;
+    text-transform: none;
     margin-bottom: 0.5rem;
 }
 
 .hero-section h3 {
     color: var(--primary-color);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    border-bottom: none;
 }
 
 /* 5. BOUTON PRIMAIRE */
 .btn-primary {
     display: inline-block;
-    background: var(--primary-color); /* Fond rose soutenu */
+    background: var(--primary-color); 
     color: white;
-    padding: 12px 25px;
+    padding: 14px 30px;
     text-decoration: none;
-    border-radius: 25px; /* Bouton très arrondi et doux */
-    margin-top: 25px;
+    border-radius: 30px; 
+    margin-top: 30px;
     transition: background 0.3s ease, transform 0.3s ease;
-    font-weight: bold;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary:hover {
-    background: #FF4081; /* Rose plus clair au survol */
-    transform: scale(1.05);
+    background: #FF4081; /* Un rose légèrement plus vif au survol */
+    transform: translateY(-2px);
 }
 
 /* 6. GRILLE DES RUBRIQUES (CARDS) */
@@ -136,63 +143,122 @@ h3 {
 
 .grid-rubriques {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     margin-top: 30px;
     text-align: left;
-    padding: 0 5%;
 }
 
 .card {
     background: var(--background-light);
     padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
     text-decoration: none;
     color: var(--secondary-color);
-    border-left: 5px solid var(--primary-color); /* Bande rose sur le côté */
-    transition: box-shadow 0.3s ease, border-left-color 0.3s ease;
+    border: 1px solid var(--accent-light); /* Contour rose pâle */
+    transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    border-left-color: #FF4081; /* Changement de nuance au survol */
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color); /* Contour devient rose foncé au survol */
 }
 
 .card h3 {
     color: var(--primary-color);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    border-bottom: none;
 }
 
 /* 7. PIED DE PAGE (FOOTER/CONTACT) */
 footer {
-    background: var(--secondary-color); /* Fond noir/gris foncé */
+    background: var(--secondary-color); /* Fond gris anthracite */
     color: white;
     text-align: center;
     padding: 30px 5%;
     margin-top: 40px;
-    border-top: 5px solid var(--primary-color); /* Ligne rose pour la séparation */
+    border-top: 5px solid var(--primary-color); 
 }
 
 footer h2 {
     color: white;
-    border-bottom: 1px solid white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--accent-light);
     padding-bottom: 5px;
-    margin-bottom: 1rem;
 }
 
 footer a {
-    color: var(--accent-light); /* Rose pâle pour les liens importants */
+    color: var(--accent-light); 
     text-decoration: none;
     transition: color 0.3s ease;
+    font-weight: 600;
 }
 
 footer a:hover {
-    color: var(--primary-color); /* Rose soutenu au survol */
+    color: var(--primary-color); 
 }
 
 .copyright {
     margin-top: 15px;
     font-size: 0.9rem;
-    opacity: 0.8;
+    opacity: 0.9;
+}
+
+
+/* 8. ADAPTATION MOBILE (RESPONSIVITÉ) */
+/* Les styles pour le menu hamburger et l'empilement mobile restent les mêmes que précédemment 
+   pour assurer la fonctionnalité sur smartphone. */
+@media (max-width: 768px) {
+    
+    header {
+        flex-wrap: wrap; 
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .nav-toggle {
+        display: block;
+        position: absolute; 
+        top: 20px;
+        right: 5%;
+    }
+
+    /* Le reste du code mobile (masquage/affichage de la nav, grid en 1 colonne) est conservé */
+    #main-nav {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    #main-nav.visible {
+        max-height: 500px; 
+        border-top: 1px solid var(--accent-light);
+        padding-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: center;
+        border-bottom: 1px solid var(--accent-light);
+    }
+    
+    .grid-rubriques {
+        grid-template-columns: 1fr;
+    }
+    
+    section {
+        padding: 20px 5%;
+    }
 }
