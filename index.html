@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Double Licence Info/Gestion - MIAGE S5</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <title>Portfolio - ZIDELMAL Tassadit - Double Licence Info/Gestion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
     <header>
         <div class="logo">
-            <h1>Mon Portfolio SI</h1>
+            <h1>Tassadit ZIDELMAL</h1>
+            <p>Portfolio SI - Parcours MIAGE S5</p>
         </div>
         
-        <nav>
+        <nav id="main-nav">
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#a-propos">À Propos</a></li>
@@ -20,6 +22,10 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+            ☰
+        </button>
     </header>
 
     <main>
@@ -29,63 +35,62 @@
             <h3>Introduction aux Systèmes d'Information (S5 - Parcours MIAGE)</h3>
             
             <p>
-                Ce portfolio numérique est le livrable principal du module **Introduction aux Systèmes d’Information**. Il centralise mes productions académiques, mes notes de cours, et documente ma compréhension des enjeux et de la structure des SI.
+                Ce portfolio est le livrable principal du module **Introduction aux Systèmes d’Information**. Il centralise mes productions académiques, mes notes de cours, et documente ma compréhension des enjeux et de la structure des SI.
             </p>
             
             <p>
-                Étudiant en 3ème année de **Double Licence Informatique et Gestion**, ce parcours m'apporte une double compétence unique : l'**analyse métier** (gestion, finance) et la **conception technique** (développement, bases de données). L'objectif est de me préparer aux métiers de l'ingénierie des systèmes d'information (futur MIAGE).
+                Étudiante en 3ème année de **Double Licence Informatique et Gestion**, ce parcours m'apporte une double compétence unique : l'**analyse métier** et la **conception technique**. Mon objectif est d'intégrer la filière MIAGE pour me préparer aux métiers de l'ingénierie des systèmes d'information.
             </p>
 
             <a href="#rubriques" class="btn-primary">Voir toutes les Rubriques du Module ➡️</a>
         </section>
 
-
         <section id="a-propos">
             <h2>À Propos de Moi</h2>
             <p>
-                Passionné par la manière dont la technologie peut optimiser les processus de gestion. Durant ce semestre, je développe un intérêt particulier pour l'**architecture des Systèmes d'Information** et l'**analyse fonctionnelle**.
+                Passionnée par la manière dont la technologie peut optimiser les processus de gestion. Durant ce semestre, je développe un intérêt particulier pour l'**architecture des Systèmes d'Information** et l'**analyse fonctionnelle**. Je maîtrise les bases de la modélisation (Merise, UML) et du développement web (HTML/CSS/JS).
             </p>
             </section>
-
 
         <section id="rubriques">
             <h2>📚 Contenu Détaillé du Portfolio (7 Rubriques)</h2>
             <p>Cliquez sur un titre pour accéder au contenu stocké dans le dossier correspondant.</p>
 
             <div class="grid-rubriques">
-                <a href="./mes_travaux" class="card">
+                
+                <a href="./mes_travaux/index.html" class="card">
                     <h3>Rubrique 1 : Travaux demandés</h3>
-                    <p>Accès à tous les dossiers et productions académiques du semestre.</p>
+                    <p>Dossiers et productions académiques du semestre.</p>
                 </a>
                 
-                <a href="./notes" class="card">
+                <a href="./notes/index.html" class="card">
                     <h3>Rubrique 2 : Notes de cours individuel</h3>
-                    <p>Synthèse personnelle des concepts clés et gestion des ressources.</p>
+                    <p>Synthèse personnelle des concepts clés.</p>
                 </a>
 
-                <a href="./Si_documents" class="card">
+                <a href="./Si_documents/index.html" class="card">
                     <h3>Rubrique 3 : Documents d'un Système d'Information</h3>
                     <p>Modélisations (MCD/UML) et documents d'analyse de SI.</p>
                 </a>
                 
-                <a href="./certifications" class="card">
+                <a href="./certifications/index.html" class="card">
                     <h3>Rubrique 4 : Les certifications</h3>
-                    <p>Preuves de compétences acquises en ligne (SQL, Git, outils).</p>
+                    <p>Preuves de compétences acquises en ligne.</p>
                 </a>
                 
-                <a href="./projet-final" class="card">
+                <a href="./projet-final/index.html" class="card">
                     <h3>Rubrique 5 : Le Projet Final</h3>
                     <p>Conception, réalisation et documentation du projet intégrateur.</p>
                 </a>
                 
-                <a href="./diaporama" class="card">
+                <a href="./diaporama/index.html" class="card">
                     <h3>Rubrique 6 : Diaporama pour la soutenance</h3>
                     <p>Support visuel pour la présentation orale du projet final.</p>
                 </a>
                 
-                <a href="./ressources" class="card">
+                <a href="./ressources/index.html" class="card">
                     <h3>Rubrique 7 : Autres ressources</h3>
-                    <p>Veille technologique, articles pertinents et enrichissement personnel.</p>
+                    <p>Veille technologique et enrichissement personnel.</p>
                 </a>
             </div>
         </section>
@@ -96,18 +101,34 @@
         <h2>Contact & Information</h2>
         
         <p>
-            Vous pouvez me contacter à tout moment par email pour toute question concernant ce portfolio ou mon parcours :
+            Vous pouvez me contacter par email :
             <a href="mailto:44016617@parisnanterre.com"><strong>44016617@parisnanterre.com</strong></a>
         </p>
         
         <p>
-            Dépôt du code source : <a href="[Lien de votre dépôt GitHub]" target="_blank">Voir sur GitHub</a>
+            Code source de ce portfolio : <a href="https://github.com/zidelmaltassadit/mon_site/tree/main" target="_blank">Dépôt GitHub</a>
         </p>
 
         <p class="copyright">
-            &copy; 2025 [Votre Nom] - Portfolio Double Licence Info/Gestion.
+            &copy; 2025 ZIDELMAL Tassadit - Portfolio Double Licence Info/Gestion.
         </p>
     </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        navToggle.addEventListener('click', () => {
+            const visibility = navToggle.getAttribute('aria-expanded');
+            if (visibility === 'false') {
+                navToggle.setAttribute('aria-expanded', 'true');
+                mainNav.classList.add('visible');
+            } else {
+                navToggle.setAttribute('aria-expanded', 'false');
+                mainNav.classList.remove('visible');
+            }
+        });
+    </script>
 
 </body>
 </html>
