@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎓 Rubrique 4 : Certifications - ZIDELMAL Tassadit</title>
+    <title>🎓 Rubrique : Certifications & Compétences - ZIDELMAL Tassadit</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>Rubrique 4 : Certifications</h1>
-            <p>Compétences Validées et Attestations</p>
+            <h1>ZIDELMAL Tassadit</h1> 
         </div>
         
-        <nav>
+        <nav id="main-nav">
             <ul>
-                <li><a href="../index.html">Accueil Général</a></li> 
-                <li><a href="../mes_travaux/index.html">Mes Travaux</a></li>
-                <li><a href="../notes/index.html">Mes Notes</a></li>
-                <li><a href="../Si_documents/index.html"> Documents SI</a></li>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../a-propos.html">À Propos de moi</a></li> 
+                <li><a href="../rubriques.html">Rubriques</a></li> 
+                <li><a href="../contact.html">Contact</a></li>
             </ul>
         </nav>
         <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
@@ -26,7 +25,7 @@
 
     <main>
         <section id="introduction-certifications">
-            <h2>🥇 Compétences Numériques et Certifications Acquises</h2>
+            <h2>🥇 Rubrique4 : Compétences Numériques et Certifications Acquises</h2>
             <p class="section-description">
                 Cette rubrique valorise mes compétences techniques et professionnelles validées par des certifications externes (PIX) et des attestations de plateformes ou par des projets concrets.
             </p>
@@ -42,20 +41,17 @@
                 <article class="doc-card">
                     <h4>🌐 Certification PIX</h4>
                     <p>Attestation officielle de niveau en compétences numériques, couvrant plusieurs domaines (Information, Communication, Sécurité, etc.).</p>
-                    <a href="pix_certification.pdf" target="_blank" class="doc-link">Voir l'attestation (PDF)</a> 
-                </article>
+                    </article>
 
                 <article class="doc-card">
                     <h4>🗃️ SQL (Bases de Données)</h4>
                     <p>Maîtrise du langage SQL pour la conception et la manipulation des bases de données relationnelles (essentiel au SI).</p>
-                    <a href="#" target="_blank" class="doc-link disabled">Lien vers la preuve/projet</a> 
-                </article>
+                    </article>
                 
                 <article class="doc-card">
                     <h4>💻 HTML & CSS</h4>
                     <p>Compétences fondamentales pour la structuration et la présentation des interfaces web (utilisées pour ce portfolio).</p>
-                    <a href="#" target="_blank" class="doc-link disabled">Lien vers la preuve/projet</a> 
-                </article>
+                    </article>
 
             </div>
         </section>
@@ -67,28 +63,45 @@
                 <article class="doc-card">
                     <h4>🐍 Python</h4>
                     <p>Compétences en programmation, utilisées pour l'analyse de données ou l'automatisation de scripts.</p>
-                    <a href="#" target="_blank" class="doc-link disabled">Lien vers la preuve/projet</a> 
-                </article>
+                    </article>
                 
                 <article class="doc-card">
                     <h4>☕ Java</h4>
                     <p>Connaissances en programmation orientée objet (POO) et développement d'applications.</p>
-                    <a href="#" target="_blank" class="doc-link disabled">Lien vers la preuve/projet</a> 
-                </article>
+                    </article>
 
                 <article class="doc-card">
                     <h4>⚡ JavaScript (Bases)</h4>
                     <p>Notions de base en JavaScript pour l'interactivité côté client (front-end).</p>
-                    <a href="#" target="_blank" class="doc-link disabled">Lien vers la preuve/projet</a> 
-                </article>
+                    </article>
                 
             </div>
         </section>
         
     </main>
 
-    <footer id="contact">
-        <p>© 2025 - Portfolio de ZIDELMAL Tassadit | <a href="../index.html#contact" class="footer-link">Contact</a></p>
+    <footer>
+        <p>© 2025 - Portfolio de ZIDELMAL Tassadit | 
+           <a href="../contact.html" class="footer-link">Contact</a>
+        </p>
     </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.getElementById('main-nav'); // J'ai ajouté l'ID 'main-nav' dans le header pour que le script fonctionne.
+
+        if(navToggle) {
+            navToggle.addEventListener('click', () => {
+                const visibility = navToggle.getAttribute('aria-expanded');
+                if (visibility === 'false') {
+                    navToggle.setAttribute('aria-expanded', 'true');
+                    mainNav.classList.add('visible');
+                } else {
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    mainNav.classList.remove('visible');
+                }
+            });
+        }
+    </script>
 </body>
 </html>
