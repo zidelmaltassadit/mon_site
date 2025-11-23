@@ -26,9 +26,28 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Style général des sections */
 main {
-    padding-top: 0;
-    padding-bottom: 50px;
+    padding: 20px 5%; /* Assure une marge latérale de 5% de chaque côté */
+}
+
+/* Ajoute une marge interne aux sections */
+.document-category {
+    padding: 40px 0; /* Garde la marge latérale définie par main */
+    max-width: 1200px; /* Limite la largeur du contenu principal pour une meilleure lisibilité */
+    margin: 0 auto; /* Centre le contenu */
+}
+
+/* Assurez-vous que les paragraphes et titres dans les sections ont une bonne marge */
+.document-category p, .document-category h3 {
+    padding: 0 10px; /* Ajoute un petit espace horizontal pour éviter le collage sur les bords */
+}
+
+/* Style spécifique des pages de contenu comme 'a-propos.html' */
+#introduction-certifications, #about-me-content, .content-page-section {
+    padding: 40px 5%; /* Marge par défaut */
+    max-width: 1000px; /* Optionnel: limite la largeur du texte pour la lisibilité */
+    margin: 0 auto; /* Centre le contenu */
 }
 
 /* ================================================= */
