@@ -29,6 +29,9 @@ body {
 main {
     padding-top: 0;
     padding-bottom: 50px;
+    /* AJOUT CLÉ : MARGE LATÉRALE PAR DÉFAUT POUR TOUT LE CONTENU */
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 /* ================================================= */
@@ -179,6 +182,8 @@ h2 {
     display: inline-block;
     padding-bottom: 5px;
     max-width: 90%;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 /* Sous-titres (H3) */
@@ -222,9 +227,9 @@ p {
 
 /* Appliqué à toutes les sections de contenu comme dans 'a-propos.html' */
 .content-page-section {
-    padding: 40px 5%; /* Marge interne (padding) pour les petits écrans */
-    max-width: 1000px; /* Limite la largeur du contenu pour une meilleure lisibilité */
-    margin: 0 auto; /* Centre le bloc de contenu sur l'écran */
+    padding: 40px 0; 
+    max-width: 1000px; /* Limite la largeur pour une meilleure lisibilité */
+    margin: 0 auto;/* Centre le bloc de contenu sur l'écran */
 }
 
 /* Assurez-vous que l'image de la section 'À Propos' ne déforme pas le texte */
@@ -240,8 +245,11 @@ p {
 /* ================================================= */
 
 .document-category {
-    padding: 40px 5%;
+    /* REMPLACER padding: 40px 5%; */
+    padding: 40px 0; /* On retire le padding latéral ici car il est géré par main/content-page-section */
     text-align: center;
+    max-width: 1200px; /* Limite la largeur de la grille */
+    margin: 0 auto; /* Centre la grille sur la page */
 }
 
 .document-grid {
@@ -249,6 +257,7 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-top: 30px;
+    /* AJOUT CLÉ : Le texte de la carte doit être centré ou à gauche selon le design */
     text-align: left;
 }
 
