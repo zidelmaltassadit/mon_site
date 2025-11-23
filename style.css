@@ -210,6 +210,13 @@ h3 {
     background-color: #c2185b; /* Rose foncé au survol */
     transform: translateY(-2px);
 }
+/* Styles généraux des paragraphes pour une meilleure lecture */
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    /* Les marges auto et max-width de la section parent vont maintenant centrer le texte efficacement */
+}
 
 /* ================================================= */
 /* 5. STYLE DES GRILLES DE DOCUMENTS (Cartes) */
