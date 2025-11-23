@@ -1,0 +1,198 @@
+/* 1. RÉINITIALISATION BASIQUE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Palette de couleurs :
+   --primary-color: #E91E63;  (Rose soutenu, élégant)
+   --secondary-color: #333333; (Noir/Gris foncé pour la lisibilité)
+   --background-light: #F9F9F9; (Blanc cassé)
+   --accent-light: #FFC0CB;    (Rose pâle pour le survol)
+*/
+body {
+    font-family: 'Georgia', serif; /* Police plus élégante */
+    line-height: 1.6;
+    color: var(--secondary-color);
+    background-color: var(--background-light);
+    --primary-color: #E91E63; 
+    --secondary-color: #333333; 
+    --background-light: #F9F9F9;
+    --accent-light: #FFC0CB;
+}
+
+/* 2. EN-TÊTE ET NAVIGATION (HEADER) */
+header {
+    background: white; /* Fond blanc */
+    color: var(--secondary-color);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre discrète noire */
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: var(--primary-color); /* Nom en rose */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: var(--secondary-color); /* Texte des liens en noir */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: var(--accent-light); /* Fond rose pâle au survol */
+    color: var(--primary-color); /* Texte qui passe au rose soutenu */
+}
+
+/* 3. STRUCTURE DES SECTIONS PRINCIPALES */
+main {
+    padding: 20px 5%;
+}
+
+section {
+    padding: 40px 0;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Coins arrondis pour la douceur */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* Ombre très légère */
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--accent-light); /* Ligne rose pâle sous le titre */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* 4. SECTION ACCUEIL (HERO) */
+.hero-section {
+    text-align: center;
+    padding: 80px 5%;
+    /* Pas de bordure en bas pour la section Hero */
+}
+
+.hero-section h2 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    border-bottom: none;
+    margin-bottom: 0.5rem;
+}
+
+.hero-section h3 {
+    color: var(--primary-color);
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* 5. BOUTON PRIMAIRE */
+.btn-primary {
+    display: inline-block;
+    background: var(--primary-color); /* Fond rose soutenu */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px; /* Bouton très arrondi et doux */
+    margin-top: 25px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #FF4081; /* Rose plus clair au survol */
+    transform: scale(1.05);
+}
+
+/* 6. GRILLE DES RUBRIQUES (CARDS) */
+#rubriques {
+    text-align: center;
+}
+
+.grid-rubriques {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    text-align: left;
+    padding: 0 5%;
+}
+
+.card {
+    background: var(--background-light);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-left: 5px solid var(--primary-color); /* Bande rose sur le côté */
+    transition: box-shadow 0.3s ease, border-left-color 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-left-color: #FF4081; /* Changement de nuance au survol */
+}
+
+.card h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+/* 7. PIED DE PAGE (FOOTER/CONTACT) */
+footer {
+    background: var(--secondary-color); /* Fond noir/gris foncé */
+    color: white;
+    text-align: center;
+    padding: 30px 5%;
+    margin-top: 40px;
+    border-top: 5px solid var(--primary-color); /* Ligne rose pour la séparation */
+}
+
+footer h2 {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: var(--accent-light); /* Rose pâle pour les liens importants */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primary-color); /* Rose soutenu au survol */
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
