@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos de Moi - ZIDELMAL Tassadit</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Tassadit ZIDELMAL</h1>
+            <p>Mon Parcours et Mes Ambitions</p>
+        </div>
+        
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À Propos</a></li>
+                <li><a href="index.html#rubriques">Rubriques</a></li> 
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+    </header>
+
+    <main>
+        <section id="a-propos-detail">
+            <h2>À Propos de Moi : Parcours et Projet Professionnel</h2>
+            <div class="apropos-container">
+                
+                <div class="colonne-texte">
+                    <h3>🎓 Mon Parcours Universitaire</h3>
+                    <p>
+                        Je suis actuellement étudiante en 3ème année de **Double Licence Informatique et Gestion**. Ce parcours unique me permet de développer une **double compétence** indispensable dans le secteur des Systèmes d'Information (SI) : 
+                        l'**analyse métier** (comprendre les besoins de gestion) et la **conception technique** (comprendre comment développer et intégrer des solutions).
+                    </p>
+                    <p>
+                        Mon objectif est d'intégrer la filière **MIAGE** (Méthodes Informatiques Appliquées à la Gestion des Entreprises) pour me spécialiser dans l'ingénierie des SI.
+                    </p>
+                    
+                    <h3>💡 Mes Intérêts et Compétences</h3>
+                    <p>
+                        Passionnée par la manière dont la technologie peut **optimiser les processus de gestion**. Durant ce semestre, je développe un intérêt particulier pour l'**architecture des Systèmes d'Information**, la **modélisation (Merise, UML)** et l'**analyse fonctionnelle**.
+                    </p>
+                    <p>
+                        Je maîtrise les bases du développement web (HTML/CSS/JS) et les bases de données (SQL), compétences que j'ai mises en œuvre pour la création de ce portfolio.
+                    </p>
+                </div>
+                
+                <div class="colonne-objectif">
+                    <h3>🎯 Mon Objectif Professionnel</h3>
+                    <p class="objectif-principal">
+                        Mon ambition est de devenir **Consultante Fonctionnelle en Systèmes d'Information (SI)**.
+                    </p>
+                    <p>
+                        Ce métier me permettra de faire le **pont entre les équipes techniques et les utilisateurs métier**. Mon rôle sera de traduire les besoins des utilisateurs en spécifications fonctionnelles claires, d'accompagner le changement et de garantir l'alignement du SI sur la stratégie de l'entreprise.
+                    </p>
+                    <a href="index.html#contact" class="btn-primary">Me contacter 📧</a>
+                    <a href="https://github.com/zidelmaltassadit/mon_site/tree/main" target="_blank" class="btn-secondary">Voir mon GitHub 🔗</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>© 2025 - Portfolio de ZIDELMAL Tassadit | <a href="index.html#contact" class="footer-link">Contact</a></p>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        if(navToggle) {
+            navToggle.addEventListener('click', () => {
+                const visibility = navToggle.getAttribute('aria-expanded');
+                if (visibility === 'false') {
+                    navToggle.setAttribute('aria-expanded', 'true');
+                    mainNav.classList.add('visible');
+                } else {
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    mainNav.classList.remove('visible');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
