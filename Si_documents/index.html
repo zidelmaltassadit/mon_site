@@ -1,87 +1,100 @@
-/* --- NOUVEAU : STYLES POUR LES PAGES DE RUBRIQUE (Si_documents/index.html, etc.) --- */
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📂 Rubrique 3 : Documents SI - ZIDELMAL Tassadit</title>
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Rubrique 3 : Documents SI</h1>
+            <p>Analyse, Modélisation et Études</p>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil Général</a></li> 
+                <li><a href="../mes_travaux/index.html">R1 Travaux</a></li>
+                <li><a href="../notes/index.html">R2 Notes</a></li>
+                <li><a href="../certifications/index.html">R4 Certifications</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Description sous le titre de la page */
-.section-description {
-    text-align: center;
-    max-width: 900px;
-    margin: 15px auto 5px auto;
-    font-size: 1.1rem;
-    color: var(--secondary-color);
-}
+    <main>
+        <section id="introduction-si">
+            <h2>🧾 Documents d'Analyse et de Conception d'un Système d'Information</h2>
+            <p class="section-description">
+                Cette rubrique présente ma capacité à **identifier, rédiger et organiser** des documents fondamentaux liés à la conception et à la documentation d'un SI. Les fichiers sont classés par catégorie pour une meilleure lecture.
+            </p>
+            <p class="section-description-detail">
+                *Critère visé : Identifier, Rédiger et organiser des documents liés à un système d’information.*
+            </p>
+        </section>
 
-.section-description-detail {
-    text-align: center;
-    max-width: 900px;
-    margin: 5px auto 30px auto;
-    font-size: 0.9rem;
-    color: #888;
-    font-style: italic;
-}
+        <section id="cahier-charges" class="document-category">
+            <h3>📂 Cahiers des Charges & Exemples d'Analyse</h3>
+            <div class="document-grid">
+                <article class="doc-card">
+                    <h4>📘 Cahier des Charges Intranet INRA (Exemple)</h4>
+                    <p>Étude de cas externe illustrant la structure et le contenu d'un document de cadrage d'un projet SI.</p>
+                    <a href="1-TP1-annexe-ExempleCahierDesChargesIntranetINRA.pdf" target="_blank" class="doc-link">Consulter (PDF)</a>
+                </article>
+                
+                <article class="doc-card">
+                    <h4>📄 Cahier des Charges - Devis Support</h4>
+                    <p>Document interne rédigé pour une application ou un besoin spécifique de l'entreprise (à décrire brièvement).</p>
+                    <a href="Cahier-des-charges-devis-support.pdf" target="_blank" class="doc-link">Consulter (PDF)</a>
+                </article>
+            </div>
+        </section>
 
-/* Titres de sous-catégories (H3) */
-.document-category h3 {
-    text-align: left;
-    color: var(--secondary-color);
-    font-size: 1.8rem;
-    padding-left: 0;
-    margin-top: 40px;
-    border-bottom: 2px solid var(--primary-color); /* Ligne rose plus marquée */
-}
+        <section id="modelisation-si" class="document-category">
+            <h3>🧩 Modélisation (MCD, UML) et Schémas de Flux</h3>
+            <div class="document-grid">
+                <article class="doc-card">
+                    <h4>🧩 TD Modélisation Conceptuelle de Données (MCD)</h4>
+                    <p>Application de la méthode Merise pour structurer la base de données d'un SI.</p>
+                    <a href="TD_MCD.pdf" target="_blank" class="doc-link">Consulter (PDF)</a>
+                </article>
+                
+                <article class="doc-card">
+                    <h4>🔄 Schéma Acteur / Flux</h4>
+                    <p>Représentation des échanges et des interactions entre les acteurs externes et internes du système.</p>
+                    <a href="Training_shéma_acteur_flux.pdf" target="_blank" class="doc-link">Consulter (PDF)</a>
+                </article>
+            </div>
+        </section>
 
-/* Grille de documents */
-.document-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    margin-top: 20px;
-    padding: 10px 0;
-}
+        <section id="supports-outils" class="document-category">
+            <h3>🛠️ Supports et Ressources Complémentaires</h3>
+            <div class="document-grid">
+                <article class="doc-card">
+                    <h4>📊 Présentation Odoo (ERP)</h4>
+                    <p>Étude d'un Progiciel de Gestion Intégré (ERP) et de son rôle dans l'optimisation des processus d'entreprise.</p>
+                    <a href="Présentation_Odoo.pdf" target="_blank" class="doc-link">Consulter (PDF)</a>
+                </article>
+                
+                <article class="doc-card">
+                    <h4>📗 Cours sur l'Information</h4>
+                    <p>Synthèse théorique sur la gestion, le cycle de vie et la valeur de l'information dans un SI.</p>
+                    <a href="Cours_information.pdf" target="_blank" class="doc-link">Consulter (PDF)</a>
+                </article>
+                
+                <article class="doc-card">
+                    <h4>🗂️ Structure du Portfolio (Document de Cadrage)</h4>
+                    <p>Document officiel ou personnel décrivant l'organisation générale de ce portfolio numérique.</p>
+                    <a href="Structure_portfolio.pdf" target="_blank" class="doc-link">Consulter (PDF)</a>
+                </article>
+            </div>
+        </section>
+        
+    </main>
 
-/* Carte de document individuelle */
-.doc-card {
-    background: var(--background-content);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    border: 1px solid var(--accent-light);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.doc-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.doc-card h4 {
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.doc-card p {
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.doc-link {
-    display: inline-block;
-    background: var(--primary-color);
-    color: white;
-    padding: 8px 15px;
-    text-decoration: none;
-    border-radius: 20px;
-    font-weight: 600;
-    transition: background 0.3s ease;
-}
-
-.doc-link:hover {
-    background: #C2185B; /* Rose foncé */
-}
-
-/* Adaptation Mobile pour la grille de documents */
-@media (max-width: 768px) {
-    .document-grid {
-        grid-template-columns: 1fr;
-    }
-}
+    <footer id="contact">
+        <p>© 2025 - Portfolio de ZIDELMAL Tassadit | <a href="../index.html#contact" class="footer-link">Contact</a></p>
+    </footer>
+</body>
+</html>
