@@ -3,68 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À Propos de Moi - ZIDELMAL Tassadit</title>
+    <title>Portfolio SI - Tassadit ZIDELMAL</title>
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <header>
         <div class="logo">
             <h1>Tassadit ZIDELMAL</h1>
-            <p>Mon Parcours et Mes Ambitions</p>
+            <p>Portfolio SI - Parcours MIAGE S5</p>
         </div>
         
         <nav id="main-nav">
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="a-propos.html">À Propos</a></li>
-                <li><a href="index.html#rubriques">Rubriques</a></li> 
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="a-propos.html">À Propos</a></li> 
+                <li><a href="#rubriques">Rubriques</a></li> 
+                <li><a href="mailto:44016617@gmail.com?subject=Demande%20de%20contact">Contact</a></li>
             </ul>
         </nav>
         <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
     </header>
 
     <main>
-        <section id="a-propos-detail">
-            <h2>À Propos de Moi : Parcours et Projet Professionnel</h2>
-            <div class="apropos-container">
+        <section id="accueil" class="hero-section">
+            <h2 class="main-title">Bienvenue dans mon Portfolio Numérique</h2>
+            
+            <div class="intro-simple">
+                <h3>Introduction aux Systèmes d'Information (S5 - Parcours MIAGE)</h3>
                 
-                <div class="colonne-texte">
-                    <h3>🎓 Mon Parcours Universitaire</h3>
-                    <p>
-                        Je suis actuellement étudiante en 3ème année de <strong>Double Licence Informatique et Gestion</strong>. Ce parcours unique me permet de développer une <strong>double compétence</strong> indispensable dans le secteur des Systèmes d'Information (SI) : 
-                        l'<strong>analyse métier</strong> (comprendre les besoins de gestion) et la <strong>conception technique</strong> (comprendre comment développer et intégrer des solutions).
-                    </p>
-                    <p>
-                        Mon objectif est d'intégrer la filière <strong>MIAGE</strong> (Méthodes Informatiques Appliquées à la Gestion des Entreprises) pour me spécialiser dans l'ingénierie des SI.
-                    </p>
-                    
-                    <h3>💡 Mes Intérêts et Compétences</h3>
-                    <p>
-                        Passionnée par la manière dont la technologie peut <strong>optimiser les processus de gestion</strong>. Durant ce semestre, je développe un intérêt particulier pour l'<strong>architecture des Systèmes d'Information</strong>, la <strong>modélisation (Merise, UML)</strong> et l'<strong>analyse fonctionnelle</strong>.
-                    </p>
-                    <p>
-                        Je maîtrise les bases du développement web (HTML/CSS/JS) et les bases de données (SQL), compétences que j'ai mises en œuvre pour la création de ce portfolio.
-                    </p>
-                </div>
+                <p>
+                    Ce portfolio est le livrable principal du module <strong>"Introduction aux Systèmes d'Information"</strong>. Il centralise mes productions académiques, mes notes de cours, et documente ma compréhension des enjeux et de la structure du SI.
+                </p>
                 
-                <div class="colonne-objectif">
-                    <h3>🎯 Mon Objectif Professionnel</h3>
-                    <p class="objectif-principal">
-                        Mon ambition est de devenir <strong>Consultante Fonctionnelle en Systèmes d'Information (SI)</strong>.
-                    </p>
-                    <p>
-                        Ce métier me permettra de faire le <strong>pont entre les équipes techniques et les utilisateurs métier</strong>. Mon rôle sera de traduire les besoins des utilisateurs en spécifications fonctionnelles claires, d'accompagner le changement et de garantir l'alignement du SI sur la stratégie de l'entreprise.
-                    </p>
-                    <a href="index.html#contact" class="btn-primary">Me contacter 📧</a>
-                    <a href="https://github.com/zidelmaltassadit/mon_site/tree/main" target="_blank" class="btn-secondary">Voir mon GitHub 🔗</a>
-                </div>
+                <p>
+                    Je vous invite à explorer les sept rubriques ci-dessous pour découvrir mes travaux, mes synthèses de cours, mes modélisations de SI, et mon projet final.
+                </p>
+
+                <a href="#rubriques" class="btn-primary">Voir toutes les Rubriques du Module ➡️</a>
             </div>
         </section>
+
+
+        <section id="rubriques" class="document-category">
+            <h2>Explorer les Rubriques du Module</h2>
+            <p class="section-description">
+                Chaque rubrique valide une compétence spécifique du semestre, démontrant ma progression et mon organisation.
+            </p>
+
+            <div class="document-grid">
+                
+                <article class="rubrique-card">
+                    <h4>R1. Mes Travaux</h4>
+                    <p>Travaux Pratiques, TD et exercices de modélisation (MCD, Schémas de flux, Odoo).</p>
+                    <a href="mes_travaux/index.html" class="doc-link">Accéder aux Travaux</a>
+                </article>
+
+                <article class="rubrique-card">
+                    <h4>R2. Notes de Cours</h4>
+                    <p>Synthèses personnelles, supports et ressources structurées pour une gestion autonome des connaissances.</p>
+                    <a href="notes/index.html" class="doc-link">Accéder aux Notes</a>
+                </article>
+                
+                <article class="rubrique-card">
+                    <h4>R3. Documents SI</h4>
+                    <p>Livrables de l'analyse et de la conception de Systèmes d'Information (Rôles, Documents Clés).</p>
+                    <a href="Si_documents/index.html" class="doc-link">Accéder aux Documents</a>
+                </article>
+
+                <article class="rubrique-card">
+                    <h4>R4. Certifications & Compétences</h4>
+                    <p>Compétences validées (PIX) et maîtrise des langages (HTML, CSS, SQL, Python) utilisées dans mes projets.</p>
+                    <a href="certifications/index.html" class="doc-link">Accéder aux Certifications</a>
+                </article>
+
+                <article class="rubrique-card">
+                    <h4>R5. Projet Final (Le plus important)</h4>
+                    <p>Conception et réalisation d'un projet numérique complet (Documentation, Analyse, Code Source).</p>
+                    <a href="projet-final/index.html" class="doc-link">Accéder au Projet</a>
+                </article>
+
+                <article class="rubrique-card">
+                    <h4>R6. Diaporama de Présentation</h4>
+                    <p>Support de présentation résumant l'ensemble de mon portfolio et les conclusions de mes travaux.</p>
+                    <a href="diaporama/index.html" class="doc-link">Accéder au Diaporama</a>
+                </article>
+                
+                <article class="rubrique-card">
+                    <h4>R7. Veille et Ressources</h4>
+                    <p>Outils techniques (Draw.io, Odoo), sites de veille académique et ressources complémentaires.</p>
+                    <a href="ressources/index.html" class="doc-link">Accéder aux Ressources</a>
+                </article>
+                
+            </div>
+        </section>
+        
     </main>
 
-    <footer>
-        <p>© 2025 - Portfolio de ZIDELMAL Tassadit | <a href="index.html#contact" class="footer-link">Contact</a></p>
+    <footer id="contact">
+        <p>© 2025 - Portfolio de ZIDELMAL Tassadit | 
+           <a href="mailto:44016617@gmail.com?subject=Demande%20de%20contact" class="footer-link">Contact</a>
+        </p>
     </footer>
 
     <script>
