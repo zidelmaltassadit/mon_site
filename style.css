@@ -124,20 +124,24 @@ nav ul li a:hover {
 }
 
 /* Style avec l'image de fond (uniquement pour index.html) */
+ 
 .hero-with-bg {
     background-image: url('Theme_rose.avif'); 
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
     
-    /* Centrage du contenu */
+    /* MODIFICATIONS CLÉS POUR LE PLEIN ÉCRAN : */
+    min-height: 100vh; /* Prend au moins 100% de la hauteur de la fenêtre */
+    padding-top: 80px; /* Assure que le contenu n'est pas caché sous l'en-tête */
+    
+    /* Centrage du contenu (styles existants) */
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     
-    padding: 100px 5%; 
-    min-height: 80vh; 
     /* Ombre blanche légère pour aider la lisibilité sur l'image */
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7); 
 }
