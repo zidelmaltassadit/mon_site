@@ -261,3 +261,66 @@ footer a:hover {
         padding: 20px 5%;
     }
 }
+/* Titre Principal (Bienvenue...) */
+.hero-section .main-title {
+    text-transform: none;
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+/* Conteneur pour les deux colonnes */
+.accueil-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 50% / 50% */
+    gap: 40px;
+    text-align: left; /* Réaligne le texte à gauche dans les colonnes */
+}
+
+/* Styles pour les titres des colonnes */
+.intro-col h3, .apropos-col h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--accent-light); /* Ligne rose fine sous le titre */
+    padding-bottom: 5px;
+}
+
+.apropos-col {
+    background: var(--background-body); /* Donne un léger fond rose pour différencier */
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid var(--primary-color); /* Bande rose foncée à gauche */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.intro-col .btn-primary {
+    margin-top: 20px; /* Aligne le bouton sous le texte */
+}
+
+/* Correction du style de la section hero pour qu'elle soit large */
+.hero-section {
+    text-align: center;
+    padding: 60px 5%; /* Réduit légèrement le padding vertical */
+    box-shadow: none; /* Enlève l'ombre de la section principale pour un look plus propre */
+}
+
+
+/* --- RESPONSIVITÉ POUR L'ACCUEIL (AJOUT DANS MEDIA QUERY) --- */
+@media (max-width: 992px) { /* On passe à une seule colonne plus tôt que le mobile standard */
+    
+    .accueil-grid {
+        grid-template-columns: 1fr; /* Les colonnes s'empilent */
+        gap: 30px;
+    }
+    
+    .hero-section .main-title {
+        font-size: 2.5rem;
+    }
+
+    .apropos-col {
+        border-left: none;
+        border-top: 5px solid var(--primary-color); /* La bande passe en haut */
+        padding: 20px;
+    }
+}
