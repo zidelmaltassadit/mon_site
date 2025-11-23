@@ -1,58 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎓 Certifications et Compétences - Zidelmalt Tassadit</title>
-  <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎓 Rubrique 4 : Certifications - ZIDELMAL Tassadit</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <h1>🎓 Mes Certifications & Compétences</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="../mes_travaux/index.html">Travaux</a></li>
-        <li><a href="../notes/index.html">Notes</a></li>
-        <li><a href="../Si_documents/index.html">SI Documents</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">
+            <h1>Rubrique 4 : Certifications</h1>
+            <p>Compétences Validées et Attestations</p>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil Général</a></li> 
+                <li><a href="../mes_travaux/index.html">Mes Travaux</a></li>
+                <li><a href="../notes/index.html">Mes Notes</a></li>
+                <li><a href="../Si_documents/index.html"> Documents SI</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+    </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h2>🌷 Langages et compétences numériques</h2>
-    <p>Voici les compétences et certifications que j’ai acquises au cours de mon parcours universitaire et via la plateforme Pix.</p>
-  </section>
+    <main>
+        <section id="introduction-certifications">
+            <h2>🥇 Compétences Numériques et Certifications Acquises</h2>
+            <p class="section-description">
+                Cette rubrique valorise mes compétences techniques et professionnelles validées par des **certifications externes (PIX)** et des **attestations de plateformes** ou par des projets concrets.
+            </p>
+            <p class="section-description-detail">
+                *Critère visé : Valoriser quelques compétences par des attestations ou certifications obtenues.*
+            </p>
+        </section>
 
-  <!-- COMPETENCES LIST -->
-  <main>
-    <section class="notes-container">
-      <div class="note-card">
-        <a href="#" target="_blank">💻 HTML & CSS</a>
-      </div>
-      <div class="note-card">
-        <a href="#" target="_blank">☕ Java</a>
-      </div>
-      <div class="note-card">
-        <a href="#" target="_blank">🐍 Python</a>
-      </div>
-      <div class="note-card">
-        <a href="#" target="_blank">🗃️ SQL</a>
-      </div>
-      <div class="note-card">
-        <a href="#" target="_blank">⚡ JavaScript (bases)</a>
-      </div>
-      <div class="note-card">
-        <a href="pix_certification.pdf" target="_blank">🌐 Compétences numériques (Pix)</a>
-      </div>
-    </section>
-  </main>
+        <section id="certifications-officielles" class="document-category">
+            <h3>🌐 Compétences Transversales et Officielles</h3>
+            <div class="document-grid">
+                
+                <article class="doc-card">
+                    <h4>🌐 Certification PIX</h4>
+                    <p>Attestation officielle de niveau en compétences numériques, couvrant plusieurs domaines (Information, Communication, Sécurité, etc.).</p>
+                    <a href="pix_certification.pdf" target="_blank" class="doc-link">Voir l'attestation (PDF)</a> 
+                </article>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 - Portfolio de Zidelmalt Tassadit</p>
-  </footer>
+                <article class="doc-card">
+                    <h4>🗃️ SQL (Bases de Données)</h4>
+                    <p>Maîtrise du langage SQL pour la conception et la manipulation des bases de données relationnelles (essentiel au SI).</p>
+                    <a href="#" target="_blank" class="doc-link disabled">Lien vers la preuve/projet</a> 
+                </article>
+                
+                <article class="doc-card">
+                    <h4>💻 HTML & CSS</h4>
+                    <p>Compétences fondamentales pour la structuration et la présentation des interfaces web (utilisées pour ce portfolio).</p>
+                    <a href="#" target="_blank" class="doc-link disabled">Lien vers la preuve/projet</a> 
+                </article>
+
+            </div>
+        </section>
+
+        <section id="langages-logiciels" class="document-category">
+            <h3>🐍 Langages de Programmation et Outils</h3>
+            <div class="document-grid">
+                
+                <article class="doc-card">
+                    <h4>🐍 Python</h4>
+                    <p>Compétences en programmation, utilisées pour l'analyse de données ou l'automatisation de scripts.</p>
+                    <a href="#" target="_blank" class="doc-link disabled">Lien vers la preuve/projet</a> 
+                </article>
+                
+                <article class="doc-card">
+                    <h4>☕ Java</h4>
+                    <p>Connaissances en programmation orientée objet (POO) et développement d'applications.</p>
+                    <a href="#" target="_blank" class="doc-link disabled">Lien vers la preuve/projet</a> 
+                </article>
+
+                <article class="doc-card">
+                    <h4>⚡ JavaScript (Bases)</h4>
+                    <p>Notions de base en JavaScript pour l'interactivité côté client (front-end).</p>
+                    <a href="#" target="_blank" class="doc-link disabled">Lien vers la preuve/projet</a> 
+                </article>
+                
+            </div>
+        </section>
+        
+    </main>
+
+    <footer id="contact">
+        <p>© 2025 - Portfolio de ZIDELMAL Tassadit | <a href="../index.html#contact" class="footer-link">Contact</a></p>
+    </footer>
 </body>
 </html>
