@@ -3,44 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - ZIDELMAL Tassadit</title>
+    <title>Portfolio SI - Tassadit ZIDELMAL</title>
     <link rel="stylesheet" href="style.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header class="main-header">
-        <nav class="nav-links">
-            <a href="#accueil">Accueil</a>
-            <a href="#a-propos">À Propos de Moi</a>
-            <a href="#contact">Contact</a>
+    <header>
+        <div class="logo">
+            <h1>ZIDELMAL Tassadit</h1> 
+        </div>
+        
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="a-propos.html">À Propos de moi</a></li> 
+                <li><a href="mailto:44016617@gmail.com?subject=Demande%20de%20contact">Contact</a></li>
+            </ul>
         </nav>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
     </header>
 
-    <section class="hero" id="accueil">
-        <div class="hero-content">
-            <h1>PORTFOLIO</h1>
-            <p class="subtitle-miage">Si - Parcours Miage S5</p>
-            <p class="subtitle-name">ZIDELMAL Tassadit</p>
+    <main>
+        <section id="accueil" class="hero-section hero-with-bg">
             
-            <nav class="rubric-nav">
-                <a href="#si_documents" class="rubric-item">Si_documents</a>
-                <a href="#certifications" class="rubric-item">certifications</a>
-                <a href="#diaporama" class="rubric-item">diaporama</a>
-                <a href="#mes_travaux" class="rubric-item">mes_travaux</a>
-                <a href="#notes" class="rubric-item">notes</a>
-                <a href="#projet_final" class="rubric-item">projet_final</a>
-                <a href="#ressources" class="rubric-item">ressources</a>
-            </nav>
-        </div>
-    </section>
+            <div class="hero-content-center">
+                <h1 class="portfolio-title">PORTFOLIO</h1>
+                
+                <h2 class="si-subtitle">Si - Parcours Miage S5</h2>
+                <h3 class="name-subtitle">ZIDELMAL Tassadit</h3>
+                
+                <div class="intro-si-presentation">
+                    <p>
+                        Ce portfolio est un recueil de mes travaux et compétences acquises dans le cadre du module <strong>"Introduction aux Systèmes d'Information"</strong>. Il démontre ma capacité à analyser, modéliser et concevoir des solutions SI, en vue d'intégrer la filière MIAGE.
+                    </p>
+                </div>
 
-    <footer class="main-footer">
-        <p>Retrouvez tous mes projets sur : 
-            <a href="https://github.com/zidelmaltassadit" target="_blank" class="github-link">
-                GitHub/zidelmaltassadit
-            </a>
+                <a href="#rubriques" class="btn-primary btn-decouvrir">Découvrir 🔍</a>
+            </div>
+        </section>
+        
+
+        <section id="rubriques" class="document-category">
+            <h2>Explorer les Rubriques du Module</h2>
+            <p class="section-description">
+                Chaque rubrique valide une compétence spécifique du semestre, démontrant ma progression et mon organisation.
+            </p>
+
+            <div class="document-grid">
+                
+                <article class="rubrique-card">
+                    <h4>R1. Mes Travaux</h4>
+                    <p>Travaux Pratiques, TD et exercices de modélisation (MCD, Schémas de flux, Odoo).</p>
+                    <a href="mes_travaux/index.html" class="doc-link">Accéder aux Travaux</a>
+                </article>
+
+                <article class="rubrique-card">
+                    <h4>R2. Notes de Cours</h4>
+                    <p>Synthèses personnelles, supports et ressources structurées pour une gestion autonome des connaissances.</p>
+                    <a href="notes/index.html" class="doc-link">Accéder aux Notes</a>
+                </article>
+                
+                <article class="rubrique-card">
+                    <h4>R3. Documents SI</h4>
+                    <p>Livrables de l'analyse et de la conception de Systèmes d'Information (Rôles, Documents Clés).</p>
+                    <a href="Si_documents/index.html" class="doc-link">Accéder aux Documents</a>
+                </article>
+
+                <article class="rubrique-card">
+                    <h4>R4. Certifications & Compétences</h4>
+                    <p>Compétences validées (PIX) et maîtrise des langages (HTML, CSS, SQL, Python) utilisées dans mes projets.</p>
+                    <a href="certifications/index.html" class="doc-link">Accéder aux Certifications</a>
+                </article>
+
+                <article class="rubrique-card">
+                    <h4>R5. Projet Final (Le plus important)</h4>
+                    <p>Conception et réalisation d'un projet numérique complet (Documentation, Analyse, Code Source).</p>
+                    <a href="projet-final/index.html" class="doc-link">Accéder au Projet</a>
+                </article>
+
+                <article class="rubrique-card">
+                    <h4>R6. Diaporama de Présentation</h4>
+                    <p>Support de présentation résumant l'ensemble de mon portfolio et les conclusions de mes travaux.</p>
+                    <a href="diaporama/index.html" class="doc-link">Accéder au Diaporama</a>
+                </article>
+                
+                <article class="rubrique-card">
+                    <h4>R7. Veille et Ressources</h4>
+                    <p>Outils techniques (Draw.io, Odoo), sites de veille académique et ressources complémentaires.</p>
+                    <a href="ressources/index.html" class="doc-link">Accéder aux Ressources</a>
+                </article>
+                
+            </div>
+        </section>
+        
+    </main>
+
+    <footer id="contact">
+        <p>© 2025 - Portfolio de ZIDELMAL Tassadit | 
+           <a href="mailto:44016617@gmail.com?subject=Demande%20de%20contact" class="footer-link">Contact</a>
         </p>
     </footer>
-    </body>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        if(navToggle) {
+            navToggle.addEventListener('click', () => {
+                const visibility = navToggle.getAttribute('aria-expanded');
+                if (visibility === 'false') {
+                    navToggle.setAttribute('aria-expanded', 'true');
+                    mainNav.classList.add('visible');
+                } else {
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    mainNav.classList.remove('visible');
+                }
+            });
+        }
+    </script>
+</body>
 </html>
