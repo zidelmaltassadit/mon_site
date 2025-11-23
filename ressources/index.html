@@ -1,60 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🌐 Ressources - Zidelmalt Tassadit</title>
-  <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌐 Rubrique 7 : Autres Ressources - ZIDELMAL Tassadit</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <h1>🌐 Ressources</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="../mes_travaux/index.html">Travaux</a></li>
-        <li><a href="../notes/index.html">Notes</a></li>
-        <li><a href="../certifications/index.html">Certifications</a></li>
-        <li><a href="../Si_documents/index.html">SI Documents</a></li>
-        <li><a href="../projet-final/index.html">Projet Final</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">
+            <h1>Rubrique 7 : Autres Ressources</h1>
+            <p>Veille Technologique et Compléments</p>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil Général</a></li> 
+                <li><a href="../mes_travaux/index.html">R1 Travaux</a></li>
+                <li><a href="../projet-final/index.html">R5 Projet Final</a></li>
+                <li><a href="../certifications/index.html">R4 Certifications</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+    </header>
 
-  <!-- HERO -->
-  <main>
-    <h2>Veille et ressources personnelles</h2>
-    <p>Voici les sites et outils utilisés durant les TP du module Système d’Information ainsi que des ressources complémentaires :</p>
+    <main>
+        <section id="introduction-ressources">
+            <h2>🔍 Veille et Outils de Développement SI</h2>
+            <p class="section-description">
+                Cette rubrique démontre ma capacité à m'informer, à rechercher des ressources complémentaires et à utiliser des **outils professionnels** en dehors du cadre strict des cours.
+            </p>
+            <p class="section-description-detail">
+                *Critère visé : Capacité de veille, d’enrichissement personnel et d'utilisation d'outils standards.*
+            </p>
+        </section>
 
-    <div class="notes-container">
-      <div class="note-card">
-        <a href="https://www.cairn.info/magazine-systeme-d-information.htm" target="_blank">📖 Revue Systèmes d’Information</a>
-        <p>Articles et publications scientifiques sur les SI.</p>
-      </div>
-      <div class="note-card">
-        <a href="https://openclassrooms.com/fr/courses/7335311-introduction-aux-systemes-dinformation" target="_blank">🎓 Cours OpenClassrooms</a>
-        <p>Introduction aux systèmes d’information.</p>
-      </div>
-      <div class="note-card">
-        <a href="https://www.drawio.com/" target="_blank">🖊️ Draw.io</a>
-        <p>Création de diagrammes et schémas de flux.</p>
-      </div>
-      <div class="note-card">
-        <a href="https://www.ampps.com/" target="_blank">💾 AMPPS</a>
-        <p>Serveur local pour PHP/MySQL utilisé durant les TP.</p>
-      </div>
-      <div class="note-card">
-        <a href="https://www.odoo.com/fr_FR" target="_blank">📊 Odoo</a>
-        <p>ERP utilisé pour les exercices pratiques.</p>
-      </div>
-    </div>
-  </main>
+        <section id="veille-academique" class="document-category">
+            <h3>📖 Ressources d'Approfondissement et Veille</h3>
+            <div class="document-grid">
+                
+                <article class="doc-card">
+                    <h4>📖 Revue Systèmes d’Information - Cairn Info</h4>
+                    <p>Accès à des articles et publications scientifiques de référence pour approfondir les concepts des SI.</p>
+                    <a href="https://www.cairn.info/magazine-systeme-d-information.htm" target="_blank" class="doc-link">Accéder au site</a>
+                </article>
+                
+                <article class="doc-card">
+                    <h4>🎓 Cours OpenClassrooms - Introduction aux SI</h4>
+                    <p>Plateforme de formation complémentaire utilisée pour valider les bases et acquérir de nouvelles notions.</p>
+                    <a href="https://openclassrooms.com/fr/courses/7335311-introduction-aux-systemes-dinformation" target="_blank" class="doc-link">Accéder au cours</a>
+                </article>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 - Portfolio de Zidelmalt Tassadit</p>
-  </footer>
+            </div>
+        </section>
+
+        <section id="outils-techniques" class="document-category">
+            <h3>🛠️ Logiciels et Outils Techniques Utilisés</h3>
+            <div class="document-grid">
+                
+                <article class="doc-card">
+                    <h4>🖊️ Draw.io (Diagrams.net)</h4>
+                    <p>Outil utilisé pour la création de diagrammes UML, schémas de flux et autres représentations graphiques du SI.</p>
+                    <a href="https://www.drawio.com/" target="_blank" class="doc-link">Accéder à l'outil</a>
+                </article>
+                
+                <article class="doc-card">
+                    <h4>💾 AMPPS (Serveur Local)</h4>
+                    <p>Environnement de développement (PHP, MySQL, Apache) essentiel pour les tests et TP en local.</p>
+                    <a href="https://www.ampps.com/" target="_blank" class="doc-link">Accéder au site</a>
+                </article>
+                
+                <article class="doc-card">
+                    <h4>📊 Odoo (ERP/PGI)</h4>
+                    <p>Progiciel de Gestion Intégré (ERP) utilisé dans le cadre des exercices pratiques du module.</p>
+                    <a href="https://www.odoo.com/fr_FR" target="_blank" class="doc-link">Accéder au site</a>
+                </article>
+
+            </div>
+        </section>
+        
+    </main>
+
+    <footer id="contact">
+        <p>© 2025 - Portfolio de ZIDELMAL Tassadit | <a href="../index.html#contact" class="footer-link">Contact</a></p>
+    </footer>
 </body>
 </html>
-s
