@@ -166,9 +166,10 @@ nav ul li a:hover {
 /* Sous-titres */
 .si-subtitle {
     font-size: 2rem;
-    color: var(--primary-color); 
-    margin: 5px 0 15px 0;
+    color: var(--primary-color); /* Rose */
     font-weight: 700;
+    /* Augmente la marge supérieure pour que le texte descende BIEN SOUS l'image */
+    margin: 100px 0 15px 0; /* J'ai mis 100px pour être sûr */
 }
 
 .name-subtitle {
