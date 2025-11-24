@@ -20,7 +20,9 @@
 }
 html, body {
     height: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
+    width: 100%;
     /* AJOUTER / VÉRIFIER CECI : */
     margin: 0; 
     padding: 0;
@@ -33,14 +35,15 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
     min-height: 100vh;
+       margin: 0; 
+    padding: 0;
 }
 
 main {
+    padding-left: 0 !important; 
+    padding-right: 0 !important; 
     padding-top: 0;
     padding-bottom: 50px;
-    /* AJOUT CLÉ : MARGE LATÉRALE PAR DÉFAUT POUR TOUT LE CONTENU */
-    padding-left: 5%;
-    padding-right: 5%;
 }
 
 /* ================================================= */
@@ -118,7 +121,9 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     
-    width: 100vw; /* **CLÉ : Prend 100% de la largeur du viewport (fenêtre) pour éviter les bords** */
+    width: 100vw; 
+    margin-left: calc(50% - 50vw);
+    /* **CLÉ : Prend 100% de la largeur du viewport (fenêtre) pour éviter les bords** */
     position: relative; /* Aide à gérer le positionnement par rapport au viewport */
     left: 0; top: 0;
     
