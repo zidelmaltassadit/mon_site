@@ -104,7 +104,7 @@ nav ul li a:hover {
 
 /* Style avec l'image de fond (uniquement pour index.html) */
 .hero-with-bg {
-    background-image: url('mon_image.jpg'); 
+    background-image: url('background.png'); 
     
     background-size: cover; 
     background-position: center;
