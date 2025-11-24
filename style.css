@@ -5,6 +5,7 @@
 :root {
     /* Couleurs du Thème (Rose, Anthracite -> Noir, Blanc) */
     --primary-color: #e91e63;   /* Rose (pour les accents, titres H3, boutons) */
+    --light-rose-name: #ffb6c1;
     --secondary-color: #000000; /* NOIR PUR pour le fond du header et titres H1/H2 */
     --accent-light: #fce4ec;   /* Rose très clair (pour les fonds légers/bordures) */
     --background-white: #ffffff; /* Blanc pur (pour le fond principal) */
@@ -17,6 +18,10 @@
     margin: 0;
     padding: 0;
 }
+html, body {
+    height: 100%; /* S'assure que les éléments racine prennent 100% de la hauteur */
+    overflow-x: hidden; /* **CLÉ : Empêche le défilement horizontal et les barres blanches latérales** */
+}
 
 body {
     font-family: 'Arial', sans-serif;
@@ -24,6 +29,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     scroll-behavior: smooth;
+    min-height: 100vh;
 }
 
 main {
@@ -109,8 +115,10 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     
-    /* C'est la clé pour le plein écran sous le header fixe : */
-    width: 100%; 
+    width: 100vw; /* **CLÉ : Prend 100% de la largeur du viewport (fenêtre) pour éviter les bords** */
+    position: relative; /* Aide à gérer le positionnement par rapport au viewport */
+    left: 0; top: 0;
+    
     min-height: calc(100vh - 80px);
     
     /* Centrage du contenu */
