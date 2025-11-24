@@ -722,6 +722,10 @@ footer {
 
 }
 
+footer p {
+    color: var(--background-white); /* Force la couleur du paragraphe en BLANC */
+    margin: 0; /* Assure qu'il n'y a pas de marge qui décolle le texte */
+}
 
 
 .footer-link {
