@@ -104,8 +104,7 @@ nav ul li a:hover {
 
 /* Style avec l'image de fond (uniquement pour index.html) */
 .hero-with-bg {
-    background-image: url('background.png'); 
-    
+    background-image: url('backgrouund.jpg'); 
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -121,10 +120,13 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     
-    padding: 100px 5%; 
-    min-height: 80vh; 
-    /* Ombre blanche légère pour aider la lisibilité sur l'image */
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7); 
+    /* Pour la lisibilité du texte sur l'image */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Ombre de texte légère */
+    color: white; /* Suggestion : Texte blanc pour mieux ressortir sur cette image */
+    
+    /* Assurez-vous qu'aucun padding vertical ne pousse l'image vers le bas ici */
+    padding-top: 0; 
+    padding-bottom: 0; 
 }
 
 .hero-content-center {
