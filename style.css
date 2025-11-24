@@ -105,11 +105,13 @@ nav ul li a:hover {
 /* Style avec l'image de fond (uniquement pour index.html) */
 .hero-with-bg {
     background-image: url('mon_image.jpg'); 
+    
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-
-    width: 100%; /* S'assure qu'elle prend toute la largeur */
+    
+    /* C'est la clé pour le plein écran sous le header fixe : */
+    width: 100%; 
     min-height: calc(100vh - 80px);
     
     /* Centrage du contenu */
