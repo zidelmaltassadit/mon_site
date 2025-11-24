@@ -19,8 +19,11 @@
     padding: 0;
 }
 html, body {
-    height: 100%; /* S'assure que les éléments racine prennent 100% de la hauteur */
-    overflow-x: hidden; /* **CLÉ : Empêche le défilement horizontal et les barres blanches latérales** */
+    height: 100%;
+    overflow-x: hidden;
+    /* AJOUTER / VÉRIFIER CECI : */
+    margin: 0; 
+    padding: 0;
 }
 
 body {
@@ -120,6 +123,7 @@ nav ul li a:hover {
     left: 0; top: 0;
     
     min-height: calc(100vh - 80px);
+    margin-left: 0;
     
     /* Centrage du contenu */
     display: flex; 
