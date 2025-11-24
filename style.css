@@ -259,9 +259,33 @@ p {
     margin: 0 auto; /* **CLÉ : Centre le bloc de contenu sur l'écran** */
     
     /* **CLÉ : Ajouter l'espace interne (padding) ici, car main n'en a plus** */
-    padding: 40px 5%;/* Centre le bloc de contenu sur l'écran */
+    padding: 40px ;/* Centre le bloc de contenu sur l'écran */
 }
 
+.content-page-section h2 {
+    text-align: center; /* Centre le titre "Liste des Produits" */
+    margin-bottom: 30px;
+}
+
+/* Style pour la table de données */
+.content-page-section table {
+    /* Optionnel : Assure que la table ne soit pas trop large */
+    max-width: 1000px; 
+    /* Recentrage : C'est la clé du centrage pour les blocs */
+    margin: 0 auto; 
+    /* S'assure qu'elle prend 100% de la place dans le max-width */
+    width: 100%; 
+    /* Ajoute de l'espace autour de la table */
+    border-collapse: collapse;
+}
+
+/* Réajustement des colonnes du tableau pour qu'elles aient l'air centrées */
+.content-page-section table th, 
+.content-page-section table td {
+    padding: 10px 15px;
+    text-align: left; /* Aligner à gauche pour la lecture */
+    vertical-align: top;
+}
 /* Assurez-vous que l'image de la section 'À Propos' ne déforme pas le texte */
 .about-me-content-block {
     display: flex;
