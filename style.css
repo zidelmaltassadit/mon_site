@@ -1,0 +1,433 @@
+/* ================================================= */
+/* 1. DÉFINITION DES VARIABLES ET RÉINITIALISATION */
+/* ================================================= */
+
+:root {
+    /* Couleurs du Thème (Rose, Anthracite -> Noir, Blanc) */
+    --primary-color: #e91e63;   /* Rose (pour les accents, titres H3, boutons) */
+    --light-rose-name: #ffb6c1;
+    --secondary-color: #000000; /* NOIR PUR pour le fond du header et titres H1/H2 */
+    --accent-light: #fce4ec;   /* Rose très clair (pour les fonds légers/bordures) */
+    --background-white: #ffffff; /* Blanc pur (pour le fond principal) */
+    --text-color: #111111;      /* Noir très foncé pour la lisibilité du texte (meilleur que le gris) */
+}
+
+/* Réinitialisation de base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-white); /* Fond blanc par défaut pour toutes les pages */
+    color: var(--text-color);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+}
+
+main {
+    padding-left: 0; 
+    padding-right: 0; 
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+/* ================================================= */
+/* 2. STYLE DU HEADER & NAVIGATION (Applicable partout) */
+/* ================================================= */
+
+header {
+    background-color: var(--secondary-color); /* Fond Anthracite/Noir */
+    color: var(--background-white);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: sticky; /* Reste en haut lors du défilement */
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: var(--light-rose-name);  /* Couleur rose clair appliquée */
+    margin: 0;
+}
+
+.logo p {
+    font-size: 0.9rem; /* Taille plus petite */
+    color: #b0bec5; /* Couleur claire (Gris très pâle) pour le contraste sur le fond sombre */
+    margin-top: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: var(--background-white);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color); /* Texte en rose au survol */
+    background-color: #4c5a69; /* Gris légèrement plus clair */
+}
+
+/* Bouton de menu mobile (caché par défaut sur grand écran) */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+/* ================================================= */
+/* 3. STYLE SPÉCIFIQUE À L'ACCUEIL (#accueil) */
+/* ================================================= */
+
+.hero-section {
+    text-align: center;
+    padding: 60px 5%;
+}
+
+/* Style avec l'image de fond (uniquement pour index.html) */
+.hero-with-bg {
+    background-image: url('backgrouund.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    width: 100vw; 
+    margin-left: calc(50% - 50vw);
+    position: relative;
+    left: 0; top: 0;
+    
+    min-height: calc(100vh - 80px);
+    margin-left: 0;
+    
+    /* Centrage du contenu */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* Pour la lisibilité du texte sur l'image */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Ombre de texte légère */
+    color: white;
+    
+    padding-top: 0; 
+    padding-bottom: 0; 
+}
+
+.hero-content-center {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Titre PORTFOLIO en très grande taille */
+.portfolio-title {
+    font-size: 6rem; 
+    font-weight: 900;
+    color: var(--secondary-color); 
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0 0 10px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour le relief */
+}
+
+/* Sous-titres */
+.si-subtitle {
+    font-size: 2rem;
+    color: var(--primary-color); /* Rose */
+    font-weight: 700;
+    margin: 100px 0 15px 0;
+}
+
+.name-subtitle {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* Conteneur de la petite présentation SI */
+.intro-si-presentation {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid var(--accent-light);
+}
+
+.intro-si-presentation p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ================================================= */
+/* 4. STYLE GÉNÉRAL DES TITRES ET BOUTONS */
+/* (Mix Rose, Blanc, Anthracite/Noir) */
+/* ================================================= */
+
+/* Titres des sections (H2) */
+h2 {
+    color: var(--secondary-color);
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 40px auto 20px auto;
+    border-bottom: 3px solid var(--primary-color);
+    display: table; /* Utilisation de display: table pour centrer le bloc avec sa bordure */
+    padding-bottom: 5px;
+    width: auto; /* La largeur s'adapte au contenu du titre */
+    max-width: calc(100% - 80px); /* Pour éviter que le titre ne dépasse le padding de la section */
+    box-sizing: border-box; /* S'assurer que le padding ne s'ajoute pas à la largeur */
+}
+
+/* Sous-titres (H3) */
+h3 {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-top: 30px;
+    text-align: center; /* Centrer les titres h3 aussi pour la cohérence */
+    width: auto;
+    max-width: calc(100% - 80px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles des boutons (Rose) */
+.btn-primary, .btn-secondary, .btn-decouvrir {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border: 2px solid var(--primary-color); /* Bordure rose */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    /* Styles par défaut (Rose) */
+    background-color: var(--primary-color); /* Rose vif */
+    color: var(--background-white); /* Texte blanc */
+}
+
+
+.btn-primary:hover, .btn-secondary:hover, .btn-decouvrir:hover {
+    background-color: transparent; /* Fond transparent au survol */
+    color: var(--primary-color); /* Texte rose au survol */
+    border-color: var(--primary-color); /* Bordure rose au survol */
+}
+
+/* Styles généraux des paragraphes pour une meilleure lecture */
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+/* --- STYLE DES SECTIONS DE CONTENU PRINCIPAL --- */
+
+/* Appliqué à toutes les sections de contenu comme dans 'a-propos.html' */
+.content-page-section {
+    max-width: 1000px; /* Limite la largeur du contenu pour une meilleure lisibilité */
+    margin: 0 auto; /* **CLÉ : Centre le bloc de contenu sur l'écran** */
+    
+    /* **CLÉ : Ajout de l'espace interne (padding) pour décoller le contenu des bords** */
+    padding: 40px; 
+}
+
+
+.content-page-section h2 {
+    text-align: center; /* Centre le titre "Liste des Produits" */
+    margin-bottom: 30px;
+}
+
+
+/* Style pour la table de données */
+.content-page-section table {
+    max-width: 1000px; 
+    margin: 0 auto; 
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+/* Réajustement des colonnes du tableau pour qu'elles aient l'air centrées */
+.content-page-section table th, 
+.content-page-section table td {
+    padding: 10px 15px;
+    text-align: left; /* Aligner à gauche pour la lecture */
+    vertical-align: top;
+}
+/* Assurez-vous que l'image de la section 'À Propos' ne déforme pas le texte */
+.about-me-content-block {
+    display: flex;
+    flex-direction: column; /* Assure que les éléments s'empilent sur mobile */
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+
+/* ================================================= */
+/* 5. STYLE DES GRILLES DE DOCUMENTS (Cartes) */
+/* ================================================= */
+
+
+.document-category {
+    padding: 40px 0; 
+    text-align: center;
+    max-width: 1200px; /* Limite la largeur de la grille */
+    margin: 0 auto; /* Centre la grille sur la page */
+}
+
+.document-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.rubrique-card, .doc-card, .note-card {
+    background-color: var(--background-white);
+    border: 1px solid var(--accent-light); 
+    border-top: 5px solid var(--primary-color); /* Bande Rose en haut */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Détail en Noir */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.rubrique-card:hover, .doc-card:hover, .note-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.rubrique-card h4, .doc-card h4, .note-card h4 {
+    color: var(--secondary-color); /* Titre de la carte en Noir/Anthracite */
+    margin-top: 0;
+}
+
+.doc-link, .note-card a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.doc-link:hover, .note-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================================= */
+/* 6. PIED DE PAGE ET CONTACT */
+/* ================================================= */
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--background-white); /* Texte en blanc */
+    text-align: center;
+    padding: 20px 5%;
+    font-size: 0.9rem;
+    border-top: 3px solid var(--primary-color);
+}
+
+footer p {
+    color: var(--background-white);
+    margin: 0;
+}
+
+.footer-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================================= */
+/* 7. RESPONSIVITÉ (Mobile First) */
+/* ================================================= */
+
+@media (max-width: 992px) {
+    
+    /* Navigation mobile */
+    .nav-toggle {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 65px; /* Sous le header */
+        right: 0;
+        background-color: var(--secondary-color);
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    nav.visible {
+        transform: translateY(0);
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Accueil mobile */
+    .portfolio-title {
+        font-size: 4rem; /* Réduit le titre sur mobile */
+    }
+    .si-subtitle {
+        font-size: 1.5rem;
+    }
+    .hero-with-bg {
+        min-height: 50vh;
+        padding: 60px 5%;
+    }
+}
